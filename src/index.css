@@ -1,4 +1,18 @@
 @tailwind base;
+
+@layer base {
+
+    html,
+    body {
+        @apply text-alaina-gray;
+    }
+
+    button,
+    a {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
 @tailwind components;
 
 @layer components {

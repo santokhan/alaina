@@ -8,7 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Header({ children }) {
   return (
-    <div className="bg-white py-2 sm:py-4 border-b-4 border-sky-600">
+    <div className="bg-white py-2 sm:py-4 border-b-2 lg:border-b-4 border-sky-600">
       <Container>
         <div className={"w-full flex justify-between items-center "}>
           <Logo />
@@ -42,7 +42,7 @@ export default function Header({ children }) {
                   fill="white"
                 ></path>
               </svg>
-              <span className="">Get a quote</span>
+              <span>Get a quote</span>
             </Link>
           </div>
           <div className="flex gap-2 sm:gap-4">
@@ -72,7 +72,7 @@ export default function Header({ children }) {
                   fill="white"
                 ></path>
               </svg>
-              <span>Get a quote</span>
+              <span className="pt-1">Get a quote</span>
             </Button>
             <IconButton
               size="large"

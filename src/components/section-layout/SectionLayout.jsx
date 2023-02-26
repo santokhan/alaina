@@ -24,7 +24,8 @@ export function STitle({ children, className = "" }) {
   return (
     <div
       className={
-        "text-4xl lg:text-5xl font-medium capitalize text-gray-700 " + className
+        "text-3xl sm:text-5xl lg:text-6xl font-semibold capitalize text-gray-700 " +
+        className
       }
     >
       {children}

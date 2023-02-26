@@ -20,6 +20,7 @@ import HowItWorks from "../components/how-it-works/HowITWorks";
 import Conscience from "../components/why-choose-us/Conscience";
 import WhyChooseUs from "../components/why-choose-us/WhyChooseUs";
 import SomeFact from "../components/why-choose-us/SomeFacts";
+import Gallery2 from "../components/gallery-2/Gallery";
 
 const theme = createTheme({
   palette: {
@@ -50,6 +51,7 @@ export default function Home() {
           <SomeFact></SomeFact>
           <WhatWeProvide></WhatWeProvide>
           <MassageRates myRef={myRef}></MassageRates>
+          <Gallery2></Gallery2>
           {/* <MassageVertical></MassageVertical>
         <SLayout>
           <div className="bg-white pt-10">
@@ -62,7 +64,7 @@ export default function Home() {
           </div>
         </SLayout> */}
           <ClientSay></ClientSay>
-          <Gallary></Gallary>
+          {/* <Gallary></Gallary> */}
           <ContactFrom></ContactFrom>
           <SercviceArea></SercviceArea>
           <Footer></Footer>

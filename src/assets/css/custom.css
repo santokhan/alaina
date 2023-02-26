@@ -309,6 +309,13 @@ html {
 /* /contact */
 
 .why-choose-us {
+    background-image: url('../images/why-choose-us.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.conscience {
     background-image: url('../images/why.png');
     background-repeat: no-repeat;
     background-size: cover;

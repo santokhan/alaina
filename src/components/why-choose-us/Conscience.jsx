@@ -5,8 +5,8 @@ import SLayout, { STitle } from "../section-layout/SectionLayout";
 
 export default function Conscience({ children }) {
   return (
-    <div>
-      <div className="bg-white relative why-choose-us py-5 text-base">
+    <div className="">
+      <div className="relative py-5 text-base conscience">
         <SLayout>
           <div className="flex flex-wrap justify-center">
             <div className="w-full lg:w-1/3"></div>
@@ -63,6 +63,7 @@ export default function Conscience({ children }) {
               sx={{
                 display: "flex",
                 alignItems: "center",
+                fontSize: "1rem",
                 gap: "0.5rem",
                 borderRadius: "2rem",
                 color: "#111111",
@@ -85,7 +86,7 @@ export default function Conscience({ children }) {
                   fill="currentColor"
                 ></path>
               </svg>
-              <span>GET FREE ESTIMATE</span>
+              <span className="pt-1">GET FREE ESTIMATE</span>
             </Button>
           </div>
         </Container>

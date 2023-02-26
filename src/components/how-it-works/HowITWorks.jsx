@@ -56,7 +56,7 @@ export function Circle({ number, className }) {
       return (
         <div
           className={
-            "w-24 h-24 lg:w-28 lg:h-28 flex justify-center items-center text-white text-2xl lg:text-3xl font-semibold rounded-full mt-10 mb-3 shadow-lg " +
+            "w-24 h-24 lg:w-28 lg:h-28 flex justify-center items-center text-2xl lg:text-3xl font-semibold rounded-full mt-10 mb-3 shadow-lg " +
             "bg-teal-50 border-4 border-teal-400 text-teal-400 shadow-teal-400/20"
           }
         >
@@ -67,7 +67,7 @@ export function Circle({ number, className }) {
       return (
         <div
           className={
-            "w-24 h-24 lg:w-28 lg:h-28 flex justify-center items-center text-white text-2xl lg:text-3xl font-semibold rounded-full mt-10 mb-3 shadow-lg " +
+            "w-24 h-24 lg:w-28 lg:h-28 flex justify-center items-center text-2xl lg:text-3xl font-semibold rounded-full mt-10 mb-3 shadow-lg " +
             "bg-sky-50 border-4 border-sky-400 text-sky-400 shadow-sky-400/20"
           }
         >
@@ -78,7 +78,7 @@ export function Circle({ number, className }) {
       return (
         <div
           className={
-            "w-24 h-24 lg:w-28 lg:h-28 flex justify-center items-center text-white text-2xl lg:text-3xl font-semibold rounded-full mt-10 mb-3 shadow-lg " +
+            "w-24 h-24 lg:w-28 lg:h-28 flex justify-center items-center text-2xl lg:text-3xl font-semibold rounded-full mt-10 mb-3 shadow-lg " +
             "bg-blue-50 border-4 border-blue-400 text-blue-400 shadow-blue-400/20"
           }
         >
