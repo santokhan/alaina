@@ -70,7 +70,7 @@ export function Image({ children, className, src }) {
 
 export function Title({ children, className }) {
   return (
-    <div className={"font-bold py-2 text-center text-[#535353] " + className}>
+    <div className={"text-2xl font-semibold py-2 text-center text-[#535353] " + className}>
       {children}
     </div>
   );

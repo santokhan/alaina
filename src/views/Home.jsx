@@ -7,7 +7,6 @@ import React, { useRef } from "react";
 import SwiperSlider from "../components/hero-section/SwiperSlider";
 import About from "../components/about-company/AboutCompany";
 import MassageVertical from "../components/mui/tabs/MassageVertical";
-import WhyChooseUs from "../components/why-choose-us/WhyChooseUs";
 import WhatWeProvide from "../components/what-we-provide/WhatWeProvide";
 import ClientSay from "../components/client-say/ClientSay";
 import SercviceArea from "../components/service-area/ServiceArea";
@@ -15,16 +14,20 @@ import PageLoader from "../components/page-loader/PageLoader";
 // import Appointments from "../components/mui/apppointment/Appointment";
 import Chat from "../components/Chat/Chat";
 
-// import { createTheme, ThemeProvider } from "@mui/material/styles";
-// import { blue } from "@mui/material/colors";
-// import HowItWorks from "../components/how-it-works/HowITWorks";
-// const theme = createTheme({
-//   palette: {
-//     primary: {
-//       main: blue[600],
-//     },
-//   },
-// });
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { blue } from "@mui/material/colors";
+import HowItWorks from "../components/how-it-works/HowITWorks";
+import Conscience from "../components/why-choose-us/Conscience";
+import WhyChooseUs from "../components/why-choose-us/WhyChooseUs";
+import SomeFact from "../components/why-choose-us/SomeFacts";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: blue[600],
+    },
+  },
+});
 
 export default function Home() {
   const myRef = useRef(null);
@@ -34,17 +37,20 @@ export default function Home() {
 
   return (
     <div>
-      <div className="text-light-sky relative bg-gray-50">
+      <ThemeProvider theme={theme}>
+        <div className="text-light-sky relative bg-gray-50">
         <PageLoader></PageLoader>
         <Header></Header>
         <SwiperSlider startScroll={startScroll}></SwiperSlider>
         <About></About>
-        <MassageVertical></MassageVertical>
+        <Conscience></Conscience>
+        <HowItWorks></HowItWorks>
         <WhyChooseUs></WhyChooseUs>
-        {/* <HowItWorks></HowItWorks> */}
+        <SomeFact></SomeFact>
         <WhatWeProvide></WhatWeProvide>
         <MassageRates myRef={myRef}></MassageRates>
-        {/* <SLayout>
+        {/* <MassageVertical></MassageVertical>
+        <SLayout>
           <div className="bg-white pt-10">
             <SHeader>
               <STitle>BOEK NU EEN AFSPRAAK</STitle>
@@ -60,8 +66,7 @@ export default function Home() {
         <SercviceArea></SercviceArea>
         <Footer></Footer>
       </div>
-      <Chat></Chat>
-      {/* <ThemeProvider theme={theme}></ThemeProvider> */}
+      <Chat></Chat></ThemeProvider>
     </div>
   );
 }
