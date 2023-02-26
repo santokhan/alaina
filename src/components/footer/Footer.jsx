@@ -22,14 +22,13 @@ export default function Footer() {
             <NLink path="/">home</NLink>
             <NLink path="/about">about us</NLink>
             <NLink path="/massages">services</NLink>
-            <NLink path="/contact">contact</NLink>
-            {/* <NLink path="/#overview">overview</NLink> */}
-            <NLink path="/#overview">blog</NLink>
           </NL>
         </div>
         <div className="w-auto py-2 lg:py-0 mr-12">
           <div className="uppercase font-bold mb-2">faq</div>
           <NL>
+            <NLink path="/contact">contact</NLink>
+            <NLink path="/#overview">blog</NLink>
             <NLink path="/massages/sports">testimonials</NLink>
             <NLink path="/massages/shiatsu">shop</NLink>
           </NL>
@@ -91,7 +90,7 @@ export function NLink({ children, path }) {
 }
 export function Subscribe({ children }) {
   return (
-    <form className="pr-2 py-4 max-w-sm">
+    <form className="pr-2 py-2 max-w-sm">
       <div className="relative my-4 w-full">
         <input
           type="email"

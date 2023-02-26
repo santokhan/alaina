@@ -9,7 +9,7 @@ export default function SLayout({ children, className = "" }) {
 }
 export function SMain({ children }) {
   return (
-    <div className="flex flex-wrap justify-center gap-12 py-8 relative">
+    <div className="flex flex-wrap justify-center gap-12 py-6 relative">
       {children}
     </div>
   );
@@ -24,7 +24,8 @@ export function STitle({ children, className = "" }) {
   return (
     <div
       className={
-        "text-4xl lg:text-5xl font-medium capitalize text-gray-700 " + className
+        "text-3xl sm:text-5xl lg:text-6xl font-semibold capitalize text-gray-700 " +
+        className
       }
     >
       {children}

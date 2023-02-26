@@ -5,9 +5,7 @@ export function PIcon({ children }) {
   return <div className="flex justify-center">{children}</div>;
 }
 export function PTitle({ children }) {
-  return (
-    <div className="text-2xl font-bold uppercase ">{children}</div>
-  );
+  return <div className="text-2xl font-bold uppercase">{children}</div>;
 }
 export function PDes({ children }) {
   return <div className="text-textgray">{children}</div>;

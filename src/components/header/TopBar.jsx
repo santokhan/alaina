@@ -8,24 +8,26 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Header({ children }) {
   return (
-    <div className="bg-white py-4 border-b-4 border-sky-600">
+    <div className="bg-white py-2 sm:py-4 border-b-2 lg:border-b-4 border-sky-600">
       <Container>
         <div className={"w-full flex justify-between items-center "}>
           <Logo />
-          <div className="hidden lg:block">We are Cleaning Experts!</div>
+          <div className="hidden lg:block text-alaina-gray">
+            We are Cleaning Experts!
+          </div>
           <div className="hidden lg:flex gap-2 items-center">
             <i className="fa fa-clock text-sky-600 text-2xl"></i>
-            <div>
+            <div className="text-alaina-gray">
               8:00am - 10:00pm <br /> Mon - Sun
             </div>
           </div>
-          <div className="hidden lg:flex flex-col items-end">
+          <div className="hidden lg:flex flex-col items-end text-alaina-gray">
             <div>Call us on:</div>
             <div className="text-2xl font-medium">800-123-4567</div>
           </div>
           <div className="hidden">
             <Link
-              className="text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:ring-sky-900/25 font-medium rounded-lg text-sm px-4 py-2 lg:px-4 lg:py-2.5 focus:outline-none capitalize flex items-center gap-2 order-3"
+              className="text-white bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:ring-sky-900/25 font-medium rounded-lg px-4 py-2 lg:px-4 lg:py-2.5 focus:outline-none capitalize flex items-center gap-2 order-3"
               to="/appointments"
             >
               <svg
@@ -40,7 +42,7 @@ export default function Header({ children }) {
                   fill="white"
                 ></path>
               </svg>
-              <span className="">Get a quote</span>
+              <span>Get a quote</span>
             </Link>
           </div>
           <div className="flex gap-2 sm:gap-4">
@@ -51,8 +53,11 @@ export default function Header({ children }) {
                 alignItems: "center",
                 gap: "0.5rem",
                 borderRadius: "2rem",
-                px: { xs: "1rem", sm: "1.5rem" },
-                py: { xs: "0rem", sm: "1rem" },
+                px: { xs: "1.25rem", sm: "1.75rem" },
+                py: { xs: 0, sm: "1.25rem" },
+                fontSize: "1rem",
+                lineHeight: 1,
+                m: 0,
               }}
             >
               <svg
@@ -67,7 +72,7 @@ export default function Header({ children }) {
                   fill="white"
                 ></path>
               </svg>
-              <span>Get a quote</span>
+              <span className="pt-1">Get a quote</span>
             </Button>
             <IconButton
               size="large"

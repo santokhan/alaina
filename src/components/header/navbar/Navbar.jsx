@@ -20,7 +20,7 @@ export default function Navbar({ children }) {
 }
 
 const linkClass =
-  "text-gray-600 font-semibold transition-all ease-in uppercase hover:text-green-500 ";
+  "text-gray-600 font-semibold transition-all ease-in uppercase hover:text-green-600 ";
 
 export function NItem({ children, to }) {
   return (

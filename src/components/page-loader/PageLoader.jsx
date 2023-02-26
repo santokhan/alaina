@@ -11,9 +11,7 @@ export default function PageLoader() {
         alt="loader logo"
         className="w-40 xl:w-60 object-contain"
       />
-      <div className="playfair text-green-800 text-5xl mt-4">
-        Alaina's Cleaning
-      </div>
+      <div className=" text-green-800 text-5xl mt-4">Alaina's Cleaning</div>
       <div className="loader"></div>
     </div>
   );

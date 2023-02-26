@@ -1,3 +1,4 @@
+import HeroButton from "./HeoButton";
 import Title from "./Title";
 
 export default function HeroSection({ startScroll }) {
@@ -6,6 +7,7 @@ export default function HeroSection({ startScroll }) {
       <div className="effec w-full h-full flex justify-center items-center">
         <div className="text-center max-w-7xl p-4">
           <Title>A caring cleaning team</Title>
+          <HeroButton></HeroButton>
         </div>
       </div>
     </div>

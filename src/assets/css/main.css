@@ -2275,9 +2275,6 @@ mark {
     }
 }
 
-.Prose.intro-para p:nth-of-type(1)::first-letter {
-    font-family: playfair display, Georgia, serif
-}
 
 @supports(not (initial-letter:3)) and (not (-webkit-initial-letter:3)) {
     .Prose.intro-para p:nth-of-type(1)::first-letter {
@@ -2317,7 +2314,7 @@ mark {
 
 .Prose>h1,
 .Prose>h2 {
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     font-size: 19px
 }
@@ -2361,7 +2358,7 @@ mark {
 }
 
 .Prose>h3 {
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     font-size: 17px
 }
@@ -2542,7 +2539,7 @@ mark {
 
 .Prose-featureList li {
     font-style: italic;
-    font-family: playfair display, Georgia, serif;
+
     font-size: 18px
 }
 
@@ -2616,7 +2613,7 @@ mark {
 }
 
 .Address {
-    font-family: playfair display, Georgia, serif;
+
     font-style: italic;
     font-size: 16px;
     text-align: center
@@ -2693,7 +2690,7 @@ mark {
 .ContentSection-title {
     font-size: 29px;
     font-weight: 700;
-    font-family: playfair display, Georgia, serif;
+
     margin-bottom: 1em
 }
 
@@ -2786,7 +2783,7 @@ mark {
 .FeatureList-title {
     font-size: 25px;
     font-weight: 700;
-    font-family: playfair display, Georgia, serif;
+
     margin-bottom: .9em
 }
 
@@ -2810,7 +2807,7 @@ mark {
 }
 
 .GlossaryEntry-letter {
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     line-height: 1.2;
     font-size: 40px;
@@ -2865,7 +2862,7 @@ mark {
 }
 
 .GlossaryEntry-itemTitle {
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     line-height: 1.2;
     font-size: 18px;
@@ -2900,7 +2897,7 @@ mark {
 .InfoBlock-title {
     font-size: 23px;
     font-weight: 700;
-    font-family: playfair display, Georgia, serif;
+
     margin-bottom: .9em;
     display: inline-block
 }
@@ -3002,7 +2999,7 @@ mark {
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     font-size: 19px;
     margin: 1em 0
@@ -3108,7 +3105,7 @@ mark {
 .SpaSpy-meta-title {
     font-size: 25px;
     font-weight: 700;
-    font-family: playfair display, Georgia, serif
+
 }
 
 .SpaSpy .Avatar {
@@ -3321,7 +3318,7 @@ mark {
 }
 
 .FieldSet-legend--standout {
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     line-height: 1.2;
     font-size: 19px;
@@ -3395,7 +3392,7 @@ mark {
     font-size: 20px;
     margin-bottom: 1.2em;
     font-weight: 700;
-    font-family: playfair display, Georgia, serif
+
 }
 
 @media screen and (min-width:380px) {
@@ -3649,7 +3646,7 @@ mark {
 }
 
 .PageHead-title {
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     line-height: 1.2;
     font-size: 40px
@@ -3726,7 +3723,7 @@ mark {
 
 .PageHead-intro {
     margin-top: .6em;
-    font-family: playfair display, Georgia, serif;
+
     font-size: 19px
 }
 
@@ -3813,7 +3810,7 @@ mark {
 }
 
 .SectionHead-title {
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     line-height: 1.1;
     font-size: 40px
@@ -4697,7 +4694,7 @@ mark {
 .Signup-title {
     font-size: 25px;
     font-weight: 700;
-    font-family: playfair display, Georgia, serif;
+
     margin-bottom: 10px
 }
 
@@ -4783,7 +4780,7 @@ mark {
     text-align: center;
     font-size: 22px;
     line-height: 1.2;
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     margin-bottom: 1em
 }
@@ -5015,7 +5012,7 @@ mark {
     clear: both;
     font-size: 19px;
     line-height: 1.2;
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     margin-bottom: .8em
 }
@@ -5442,7 +5439,7 @@ mark {
 }
 
 .RelatedContent-title {
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 1em;
@@ -5653,7 +5650,7 @@ mark {
     padding-left: 12px;
     margin-bottom: 17px;
     font-weight: 700;
-    font-family: playfair display, Georgia, serif
+
 }
 
 @media(max-width:769px) {
@@ -5714,7 +5711,7 @@ mark {
     padding-left: 12px;
     margin-bottom: 17px;
     font-weight: 700;
-    font-family: playfair display, Georgia, serif
+
 }
 
 .SidebarNav-item {
@@ -5802,7 +5799,7 @@ mark {
 }
 
 .AwardsResult-title {
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     font-size: 18px;
     margin: 0 0 .6em
@@ -5935,7 +5932,7 @@ mark {
 }
 
 .BubbleRatingCard-rating {
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     line-height: 1.2;
     font-size: 19px;
@@ -5966,7 +5963,7 @@ mark {
 }
 
 .BubbleRatingCard-summary {
-    font-family: playfair display, Georgia, serif;
+
     font-style: italic;
     font-size: 16px;
     margin: 1rem 0
@@ -6271,7 +6268,7 @@ mark {
 }
 
 .NotFound-title {
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     line-height: 1.2;
     font-size: 30px;
@@ -6292,7 +6289,7 @@ mark {
 }
 
 .NotFound-message {
-    font-family: playfair display, Georgia, serif;
+
     color: #fff;
     font-weight: 700;
     font-size: 19px;
@@ -6334,7 +6331,7 @@ mark {
     padding-left: 12px;
     margin-bottom: 22px;
     font-weight: 700;
-    font-family: playfair display, Georgia, serif
+
 }
 
 .SocialActions .Social {
@@ -6387,7 +6384,7 @@ mark {
 }
 
 .SpaBadge-title {
-    font-family: playfair display, Georgia, serif;
+
     color: #fff;
     font-weight: 700;
     font-size: 17px;
@@ -6804,7 +6801,7 @@ mark {
 }
 
 .SiteFooter-group-title {
-    font-family: playfair display, Georgia, serif;
+
     color: #fff;
     font-weight: 700;
     border-top: 2px solid #fff;
@@ -6929,7 +6926,7 @@ mark {
 .SearchResults-setTitle {
     margin-left: auto;
     margin-right: auto;
-    font-family: playfair display, Georgia, serif;
+
     font-weight: 700;
     line-height: 1.2
 }
