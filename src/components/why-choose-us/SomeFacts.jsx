@@ -21,19 +21,19 @@ export default function SomeFacts() {
         </div>
         <div className={"w-1/1 md:w-6/12 lg:w-4/12 flex flex-col items-center px-4 text-center"}>
           <div className="w-40 h-40 rounded-full overflow-hidden relative">
-            <img src={fact1} alt="best image" className="absolute w-full h-full object-cover left-0 top-0"/>
+            <img src={fact2} alt="best image" className="absolute w-full h-full object-cover left-0 top-0"/>
             <div>Order <br /> 250</div>
           </div>
         </div>
         <div className={"w-1/1 md:w-6/12 lg:w-4/12 flex flex-col items-center px-4 text-center"}>
           <div className="w-40 h-40 rounded-full overflow-hidden relative">
-            <img src={fact1} alt="best image" className="absolute w-full h-full object-cover left-0 top-0"/>
+            <img src={fact3} alt="best image" className="absolute w-full h-full object-cover left-0 top-0"/>
             <div>Order <br /> 250</div>
           </div>
         </div>
         <div className={"w-1/1 md:w-6/12 lg:w-4/12 flex flex-col items-center px-4 text-center"}>
           <div className="w-40 h-40 rounded-full overflow-hidden relative">
-            <img src={fact1} alt="best image" className="absolute w-full h-full object-cover left-0 top-0"/>
+            <img src={fact4} alt="best image" className="absolute w-full h-full object-cover left-0 top-0"/>
             <div>Order <br /> 250</div>
           </div>
         </div>
