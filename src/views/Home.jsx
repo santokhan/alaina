@@ -43,15 +43,14 @@ export default function Home() {
           <PageLoader></PageLoader>
           <Header></Header>
           <SwiperSlider startScroll={startScroll}></SwiperSlider>
-          {/* <About></About> */}
           <Conscience></Conscience>
           <HowItWorks></HowItWorks>
           <hr />
           <WhyChooseUs></WhyChooseUs>
           <SomeFact></SomeFact>
+          <Gallery2></Gallery2>
           <WhatWeProvide></WhatWeProvide>
           <MassageRates myRef={myRef}></MassageRates>
-          <Gallery2></Gallery2>
           {/* <MassageVertical></MassageVertical>
         <SLayout>
           <div className="bg-white pt-10">

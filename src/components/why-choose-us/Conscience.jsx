@@ -13,10 +13,10 @@ export default function Conscience({ children }) {
             <div className="w-full lg:w-2/3 px-4 bg-white/75 backdrop-blur-sm rounded-xl">
               <div className="flex flex-col gap-4 relative mb-4 text-center">
                 <STitle>Cleaning With a Conscience</STitle>
-                <div className="text-gray-500 text-xl font-semibold">
+                <div className="text-xl font-semibold">
                   Professional Cleaning Services for Home and Office
                 </div>
-                <div className="text-gray-500 text-start sm:text-center leading-relaxed">
+                <div className="text-start sm:text-center leading-relaxed">
                   Cleaning can be a chore and we know you have many choices when
                   you consider hiring a maid service. Because of that, we are
                   constantly thriving to improve our already high standards to

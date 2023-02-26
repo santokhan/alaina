@@ -20,12 +20,12 @@ export default function SercviceArea({ children }) {
             <div className="flex flex-col gap-4 relative mb-4">
               {/* <STitle>Our service area</STitle> */}
               <STitle>ONS SERVICEGEBIED</STitle>
-              <div className="text-gray-500 text-xl font-medium">
+              <div className=" text-xl font-medium">
                 Heb je ooit een massage gehad waardoor je lichaam ontspannen en
                 verjongd aanvoelt? Een die je het gevoel geeft alsof je in de
                 lucht zweeft? Dat is precies wat wij bieden bij onze service.
               </div>
-              <div className="text-gray-500 text-xl font-medium">
+              <div className=" text-xl font-medium">
                 Wij zijn gespecialiseerd in het bieden van de beste massage die
                 beschikbaar is, binnen{" "}
                 <span className="font-bold whitespace-nowrap">

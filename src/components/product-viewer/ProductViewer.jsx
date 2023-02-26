@@ -28,7 +28,7 @@ export function Title({ children, className }) {
 }
 export function Desc({ children, className }) {
   return (
-    <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">
+    <p className="max-w-2xl mb-6 font-light  lg:mb-8 md:text-lg lg:text-xl ">
       {children}
     </p>
   );

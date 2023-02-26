@@ -33,7 +33,5 @@ export function STitle({ children, className = "" }) {
   );
 }
 export function SDes({ children, className = "" }) {
-  return (
-    <div className={"text-base text-gray-500 " + className}>{children}</div>
-  );
+  return <div className={"text-base  " + className}>{children}</div>;
 }

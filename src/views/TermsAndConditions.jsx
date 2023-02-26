@@ -107,7 +107,7 @@ export default function TermsAndConditions() {
             >
               Privacy Policy
             </h2>
-            <p className="text-gray-500 pt-4">
+            <p className=" pt-4">
               This privacy policy sets out how Creative Layer Inc. (“Creative
               Layer”, “we”, “us”, or “our”, and also doing business and “remx”)
               collects, uses, and discloses, any personal information that you
@@ -135,7 +135,7 @@ export default function TermsAndConditions() {
             >
               Privacy Summary
             </h2>
-            <ol className="text-gray-500 m-4 space-y-6 md:space-y-10">
+            <ol className=" m-4 space-y-6 md:space-y-10">
               <li>
                 <span className="text-black font-medium">
                   {" "}
@@ -206,7 +206,7 @@ export default function TermsAndConditions() {
             >
               1. What Personal Information we collect
             </h2>
-            <p className="text-gray-500 my-4">
+            <p className=" my-4">
               <span className="text-black font-medium">
                 “Personal Information”
               </span>{" "}
@@ -268,7 +268,7 @@ export default function TermsAndConditions() {
             >
               2. What we do with the Personal Information we collect
             </h2>
-            <p className="text-gray-500 my-4">
+            <p className=" my-4">
               We use the information we collect to provide our Services in
               accordance with our
               <a
@@ -326,7 +326,7 @@ export default function TermsAndConditions() {
                 consent.
               </li>
             </ol>
-            <p className="text-gray-500 mt-4">
+            <p className=" mt-4">
               We may also anonymize, aggregate or otherwise strip any personal
               information or other information we collect of all personally
               identifying characteristics and may use or share that aggregated,
@@ -341,7 +341,7 @@ export default function TermsAndConditions() {
             >
               3. When we Disclose Personal Information
             </h2>
-            <ol className="text-gray-500 my-4 space-y-6 md:space-y-10">
+            <ol className=" my-4 space-y-6 md:space-y-10">
               <li>
                 The sale of NFTs through our Services uses block chain
                 technology. When you purchase an NFT, at the time of the
@@ -390,7 +390,7 @@ export default function TermsAndConditions() {
             >
               4. How we use cookies and collect information using technology
             </h2>
-            <ol className="text-gray-500 my-4 space-y-6 md:space-y-10">
+            <ol className=" my-4 space-y-6 md:space-y-10">
               <li>
                 A cookie is a small file which is placed on your computer or
                 mobile device’s hard drive. Cookies and other technologies can
@@ -458,7 +458,7 @@ export default function TermsAndConditions() {
             >
               5. Security
             </h2>
-            <ol className="text-gray-500 my-4 space-y-6 md:space-y-10">
+            <ol className=" my-4 space-y-6 md:space-y-10">
               <li>
                 In order to help prevent unauthorised access or disclosure of
                 personal information, we have put in place physical, electronic
@@ -489,7 +489,7 @@ export default function TermsAndConditions() {
             >
               6. We may Transfer Personal Information to Other Countries
             </h2>
-            <ol className="text-gray-500 my-4 space-y-6 md:space-y-10">
+            <ol className=" my-4 space-y-6 md:space-y-10">
               <li>
                 Personal information that we collect may be stored and processed
                 in Canada or any other country in which we or our service
@@ -516,7 +516,7 @@ export default function TermsAndConditions() {
             >
               7. Links to other websites
             </h2>
-            <p className="text-gray-500 my-4">
+            <p className=" my-4">
               Our Services may contain links to other websites that may interest
               you. However, once you have used these links to leave our site,
               you should note that we do not have any control over that other
@@ -534,7 +534,7 @@ export default function TermsAndConditions() {
             >
               8. Your Choices
             </h2>
-            <p className="text-gray-500 my-4">
+            <p className=" my-4">
               You may choose to restrict the collection or use of your personal
               information in the following ways:
             </p>
@@ -551,7 +551,7 @@ export default function TermsAndConditions() {
               </li>
             </ol>
 
-            <p className="text-gray-500 my-4">
+            <p className=" my-4">
               If you choose to withdraw consent from a processing of personal
               information we need to provide our Services, we may no longer be
               able to provide those Services to you.
@@ -564,7 +564,7 @@ export default function TermsAndConditions() {
             >
               9. Accessing and Correcting your Personal Information
             </h2>
-            <ol className="text-gray-500 my-4 space-y-6 md:space-y-10">
+            <ol className=" my-4 space-y-6 md:space-y-10">
               <li>
                 You may request access to your personal information that we hold
                 and to request a correction to it if you believe it is
@@ -598,7 +598,7 @@ export default function TermsAndConditions() {
             >
               10. Children
             </h2>
-            <ol className="text-gray-500 my-4 space-y-6 md:space-y-10">
+            <ol className=" my-4 space-y-6 md:space-y-10">
               <li>
                 We do not intend to collect information from children. If you
                 are under the age of majority where you reside, please do not
@@ -617,7 +617,7 @@ export default function TermsAndConditions() {
             >
               11. NEEM CONTACT OP
             </h2>
-            <p className="text-gray-500 my-4">
+            <p className=" my-4">
               If you have any questions regarding this Privacy Policy, any
               personal information you have submitted to us, or if you would
               like to:
@@ -629,7 +629,7 @@ export default function TermsAndConditions() {
               </li>
               <li>to submit a complaint,</li>
             </ol>
-            <p className="text-gray-500 mt-4">
+            <p className=" mt-4">
               Please advise us by contacting our Privacy Officer by email us at{" "}
               <a
                 className="text-black font-medium underline hover:text-brand-accent-light hover:no-underline"

@@ -3,7 +3,7 @@ import PLayout from "./layout/PLayout";
 import PHeader, { PTitle, PIcon, PDes } from "./layout/PHeader";
 import PTabs, { Tab } from "./layout/PTab";
 import PMain from "./layout/PMain";
-import PCard, { CImg, CTitle, CDes } from "./layout/PCard";
+import PCard, { CImg, CTitle, CDes, Effect } from "./layout/PCard";
 import { GalleryContext } from "../../context/tabs/GalleryContext";
 import { STitle } from "../section-layout/SectionLayout";
 
@@ -29,7 +29,6 @@ export default function Construction() {
       <div id="construction">
         <PLayout>
           <PHeader>
-            <PIcon></PIcon>
             <STitle>Our Projects</STitle>
           </PHeader>
           <PTabs>
@@ -41,41 +40,63 @@ export default function Construction() {
           <PMain>
             <PCard category={3}>
               <CImg src={GImage1}></CImg>
-              <CTitle></CTitle>
+              <Effect>
+                <CTitle></CTitle>
+              </Effect>
             </PCard>
             <PCard category={3}>
               <CImg src={GImage2}></CImg>
-              <CTitle></CTitle>
+              <Effect>
+                <CTitle></CTitle>
+              </Effect>
             </PCard>
             <PCard category={3}>
               <CImg src={GImage3}></CImg>
-              <CTitle></CTitle>
+              <Effect>
+                <CTitle></CTitle>
+              </Effect>
             </PCard>
             <PCard category={5}>
               <CImg src={GImage4}></CImg>
-              <CTitle></CTitle>
+              <Effect>
+                <CTitle></CTitle>
+              </Effect>
             </PCard>
             <PCard category={2}>
               <CImg src={GImage5}></CImg>
-              <CTitle></CTitle>
+              <Effect>
+                <CTitle></CTitle>
+              </Effect>
             </PCard>
             <PCard category={2}>
               <CImg src={GImage6}></CImg>
-              <CTitle></CTitle>
+              <Effect>
+                <CTitle></CTitle>
+              </Effect>
             </PCard>
             <PCard category={2}>
               <CImg src={GImage7}></CImg>
-              <CTitle></CTitle>
+              <Effect>
+                <CTitle></CTitle>
+              </Effect>
             </PCard>
             <PCard category={2}>
               <CImg src={GImage8}></CImg>
-              <CTitle></CTitle>
+              <Effect>
+                <CTitle></CTitle>
+              </Effect>
             </PCard>
             <PCard category={4}>
-              <CImg src={GImage9}></CImg> <CTitle>Rotary Dril</CTitle>
+              <CImg src={GImage9}></CImg>
+              <Effect>
+                <CTitle></CTitle>
+              </Effect>
             </PCard>
             <PCard category={4}>
-              <CImg src={GImage10}></CImg> <CTitle>Water well drill</CTitle>
+              <CImg src={GImage10}></CImg>
+              <Effect>
+                <CTitle></CTitle>
+              </Effect>
             </PCard>
           </PMain>
         </PLayout>
