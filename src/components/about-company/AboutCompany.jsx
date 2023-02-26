@@ -1,18 +1,20 @@
+import CompanyHistory from "../CompanyHistory/CompanyHistory";
+import HireUs from "../HireUs/HireUs";
+import OurCompany from "../OurCompany/OurCompany";
+import OurTeam from "../OurTeam/OurTeam";
+import OurValues from "../OurValues/OurValues";
+import Satisfaction from "../Satisfaction/Satisfaction";
 import SLayout, { SDes, SMain, STitle } from "../section-layout/SectionLayout";
-import { Link } from "react-router-dom";
 
-export default function About() {
+export default function AboutCompany() {
   return (
-    <div id="about">
-      <SLayout className="lg:pb-0 ">
-        <SMain>
-          <div className="relative w-full overflow-hidden">
-            <div className="mb-4 relative border-l-4 pl-3 lg:pl-0 border-green-700 lg:border-none flex justify-center">
-              <STitle>Cleaning Services That Shine</STitle>
-            </div>
-          </div>
-        </SMain>
-      </SLayout>
-    </div>
+      <div>
+        <OurCompany />
+        <OurTeam />
+        <OurValues />
+        <CompanyHistory />
+        <Satisfaction />
+        <HireUs />
+      </div>
   );
 }

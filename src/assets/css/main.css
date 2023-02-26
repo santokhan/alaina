@@ -5253,6 +5253,30 @@ mark {
     background-repeat: no-repeat
 }
 
+
+/* team style is given below */
+.team-main{
+    position: relative;
+    border-radius: 50%;
+}
+
+.team-main .team-card{
+    position: absolute;
+    width: 100%;
+    top: 290px;
+    transition: all .5s;
+}
+
+.team:hover .team-card{
+    top: 245px;
+}
+
+/* satisfaction style is given below */
+.satisfaction{
+    top: -52px;
+    left: -10px;
+}
+
 @media screen and (min-width:380px) {
     .Card--post.Card--featured .Card-body {
         padding-top: calc(20px + 10 * (100vw - 380px)/1060);

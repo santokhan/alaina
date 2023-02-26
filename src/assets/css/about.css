@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* divider css */
+
+
 /* Navbar start */
 .drop-navbar {
     animation-name: drop;

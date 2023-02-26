@@ -31,6 +31,7 @@ export default function SwiperSlider({ startScroll }) {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
+        
       >
         <SwiperSlide>
           <HeroSection startScroll={startScroll}></HeroSection>
