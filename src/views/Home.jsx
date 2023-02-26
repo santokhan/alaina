@@ -43,7 +43,7 @@ export default function Home() {
           <PageLoader></PageLoader>
           <Header></Header>
           <SwiperSlider startScroll={startScroll}></SwiperSlider>
-          <About></About>
+          {/* <About></About> */}
           <Conscience></Conscience>
           <HowItWorks></HowItWorks>
           <hr />
