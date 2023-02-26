@@ -13,8 +13,6 @@ export default function Navbar({ children }) {
           <NLink to="/blog">blog</NLink>
           <NLink to="/faq">FAQ</NLink>
           <NItem to="/testimonials">testimonials</NItem>
-          <NItem to="/shop">shop</NItem>
-          <NItem to="/contacts">contacts</NItem>
         </ul>
       </div>
     </div>

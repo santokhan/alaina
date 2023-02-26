@@ -19,22 +19,19 @@ export default function Footer() {
         <div className="w-auto py-2 lg:py-0">
           <div className="uppercase font-bold mb-2">Sitemap</div>
           <NL>
-            <NLink path="/">Thuis</NLink>
-            <NLink path="/about">Wat Betreft</NLink>
-            <NLink path="/massages">massages</NLink>
+            <NLink path="/">home</NLink>
+            <NLink path="/about">about us</NLink>
+            <NLink path="/massages">services</NLink>
             <NLink path="/contact">contact</NLink>
             {/* <NLink path="/#overview">overview</NLink> */}
-            <NLink path="/#overview">overzicht</NLink>
+            <NLink path="/#overview">blog</NLink>
           </NL>
         </div>
         <div className="w-auto py-2 lg:py-0 mr-12">
-          <div className="uppercase font-bold mb-2">Massages</div>
+          <div className="uppercase font-bold mb-2">faq</div>
           <NL>
-            <NLink path="/massages/sports">sportmassage</NLink>
-            <NLink path="/massages/shiatsu">shiatsumassage</NLink>
-            <NLink path="/massages/chair">stoelmassage</NLink>
-            {/* <NLink path="/massages/relaxation">relaxation</NLink> */}
-            <NLink path="/massages/relaxation">ontspanningsmassage</NLink>
+            <NLink path="/massages/sports">testimonials</NLink>
+            <NLink path="/massages/shiatsu">shop</NLink>
           </NL>
         </div>
         <div className="w-full sm:w-1/2 lg:w-3/12 py-2 lg:py-0">
@@ -43,7 +40,7 @@ export default function Footer() {
             <li className="py-2 flex justify-start items-start gap-2">
               <Link
                 to="tel:+251116686900"
-                className="flex gap-2 items-center hover:underline hover:underline-offset-4 hover:decoration-2 hover:translate-x-2 transition-all ease-in"
+                className="flex gap-2 items-center text-gray-600 hover:text-green-600 font-medium hover:translate-x-2 transition-all ease-in"
               >
                 <Call />
                 +31642744368
@@ -52,7 +49,7 @@ export default function Footer() {
             <li className="py-2 flex justify-start items-start gap-2">
               <Link
                 to="mailto:info@iconimex.com"
-                className="flex gap-2 items-center hover:underline hover:underline-offset-4 hover:decoration-2 hover:translate-x-2 transition-all ease-in"
+                className="flex gap-2 items-center text-gray-600 hover:text-green-600 font-medium hover:translate-x-2 transition-all ease-in"
               >
                 <Envelope />
                 biz@ahmassage.nl
@@ -66,7 +63,7 @@ export default function Footer() {
   );
 }
 const linkClass =
-  "hover:underline hover:underline-offset-4 hover:decoration-2 text-raisin font-medium  hover:translate-x-2 transition-all ease-in block py-2 ";
+  "text-gray-600 font-medium transition-all ease-in block py-2 hover:translate-x-2 hover:text-green-600 ";
 
 export function NL({ children }) {
   return <ul className="flex flex-col items-start">{children}</ul>;
@@ -107,8 +104,7 @@ export function Subscribe({ children }) {
           type="button"
           className="text-white bg-sky-700 hover:bg-sky-900 font-medium text-sm px-5 py-2.5 absolute right-2 bottom-2 rounded-xl focus:bottom-[3px] focus:right-1 shadow-xl focus:shadow-none transition-all ease-in capitalize"
         >
-          {/* Submit */}
-          indienen
+          Submit
         </button>
       </div>
     </form>

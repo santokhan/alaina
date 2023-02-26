@@ -10,13 +10,13 @@ export default function Conscience({ children }) {
         <SLayout>
           <div className="flex flex-wrap justify-center">
             <div className="w-full lg:w-1/3"></div>
-            <div className="w-full lg:w-2/3 px-8 lg:px-8 py-4 bg-white/75 backdrop-blur-sm rounded-xl">
+            <div className="w-full lg:w-2/3 px-4 bg-white/75 backdrop-blur-sm rounded-xl">
               <div className="flex flex-col gap-4 relative mb-4 text-center">
                 <STitle>Cleaning With a Conscience</STitle>
                 <div className="text-gray-500 text-xl font-bold">
                   Professional Cleaning Services for Home and Office
                 </div>
-                <div className="text-gray-500">
+                <div className="text-gray-500 text-start sm:text-center">
                   Cleaning can be a chore and we know you have many choices when
                   you consider hiring a maid service. Because of that, we are
                   constantly thriving to improve our already high standards to
@@ -28,7 +28,7 @@ export default function Conscience({ children }) {
                   cleaning team understands their role and how it relates to the
                   overall performance of the team.
                 </div>
-                <ul className="grid grid-cols-2 justify-evenly text-start space-y-2 text-gray-700">
+                <ul className="grid grid-cols-1 lg:grid-cols-2 justify-evenly text-start space-y-2 text-gray-700">
                   <li className="flex items-center gap-2">
                     <i className="fa fa-check text-sky-600"></i>
                     <span>One-off, weekly or fortnightly visits</span>
@@ -51,12 +51,12 @@ export default function Conscience({ children }) {
           </div>
         </SLayout>
       </div>
-      <div className="bg-sky-600 text-white py-5 lg:py-10">
+      <div className="bg-sky-600 text-white py-6 lg:py-10">
         <Container>
-          <div className="flex items-center justify-center flex-wrap gap-16">
-            <div className="text-3xl">
+          <div className="flex items-center justify-center flex-wrap gap-6 lg:gap-16">
+            <div className="text-2xl lg:text-3xl text-center">
               Why Our Customers Choose Us?
-              <span className="font-semibold">free estimate</span>
+              <span className="font-semibold"> free estimate</span>
             </div>
             <div>
               <Button

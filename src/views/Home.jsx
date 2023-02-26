@@ -46,7 +46,7 @@ export default function Home() {
         <Conscience></Conscience>
         <HowItWorks></HowItWorks>
         <WhyChooseUs></WhyChooseUs>
-        <SomeFact></SomeFact>
+        {/* <SomeFact></SomeFact> */}
         <WhatWeProvide></WhatWeProvide>
         <MassageRates myRef={myRef}></MassageRates>
         {/* <MassageVertical></MassageVertical>
