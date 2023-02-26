@@ -6,7 +6,7 @@ export function PIcon({ children }) {
 }
 export function PTitle({ children }) {
   return (
-    <div className="text-2xl font-bold uppercase playfair">{children}</div>
+    <div className="text-2xl font-bold uppercase ">{children}</div>
   );
 }
 export function PDes({ children }) {

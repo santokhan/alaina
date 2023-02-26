@@ -39,17 +39,18 @@ export default function Home() {
     <div>
       <ThemeProvider theme={theme}>
         <div className="text-light-sky relative bg-gray-50">
-        <PageLoader></PageLoader>
-        <Header></Header>
-        <SwiperSlider startScroll={startScroll}></SwiperSlider>
-        <About></About>
-        <Conscience></Conscience>
-        <HowItWorks></HowItWorks>
-        <WhyChooseUs></WhyChooseUs>
-        {/* <SomeFact></SomeFact> */}
-        <WhatWeProvide></WhatWeProvide>
-        <MassageRates myRef={myRef}></MassageRates>
-        {/* <MassageVertical></MassageVertical>
+          <PageLoader></PageLoader>
+          <Header></Header>
+          <SwiperSlider startScroll={startScroll}></SwiperSlider>
+          <About></About>
+          <Conscience></Conscience>
+          <HowItWorks></HowItWorks>
+          <hr />
+          <WhyChooseUs></WhyChooseUs>
+          <SomeFact></SomeFact>
+          <WhatWeProvide></WhatWeProvide>
+          <MassageRates myRef={myRef}></MassageRates>
+          {/* <MassageVertical></MassageVertical>
         <SLayout>
           <div className="bg-white pt-10">
             <SHeader>
@@ -60,13 +61,14 @@ export default function Home() {
             </SMain>
           </div>
         </SLayout> */}
-        <ClientSay></ClientSay>
-        <Gallary></Gallary>
-        <ContactFrom></ContactFrom>
-        <SercviceArea></SercviceArea>
-        <Footer></Footer>
-      </div>
-      <Chat></Chat></ThemeProvider>
+          <ClientSay></ClientSay>
+          <Gallary></Gallary>
+          <ContactFrom></ContactFrom>
+          <SercviceArea></SercviceArea>
+          <Footer></Footer>
+        </div>
+        <Chat></Chat>
+      </ThemeProvider>
     </div>
   );
 }

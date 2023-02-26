@@ -1,3 +1,4 @@
+import Container from "../layouts/Container";
 import { SDes, STitle } from "../section-layout/SectionLayout";
 import { Col, Image, Row, Title } from "../what-we-provide/WhatWeProvide";
 import fact1 from "../../assets/images/facts/facts-img-1.jpg";
@@ -7,44 +8,44 @@ import fact4 from "../../assets/images/facts/facts-img-4.jpg";
 
 export default function SomeFacts() {
   return (
-    <Container className="pt-10 pb-20">
+    <Container className="pb-20">
       <div className="flex flex-col items-center mt-10 mb-6 text-center">
         <STitle>Some Facts About Us</STitle>
       </div>
-      <div className="flex flex-wrap lg:flex-nowrap items-start justify-center rounded-[2rem] px-3 py-16 ">
-        <Container>
+      <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-center rounded-[2rem] px-4">
+        <FactCircle>
           <ImageBox src={fact1} />
-          <Text>
+          <div className="z-10 relative text-2xl lg:text-3xl font-semibold w-full h-full flex justify-center items-center text-white">
             1255 <br /> Orders
-          </Text>
-        </Container>
-        <Container>
+          </div>
+        </FactCircle>
+        <FactCircle>
           <ImageBox src={fact2} />
-          <Text>
+          <div className="z-10 relative text-2xl lg:text-3xl font-semibold w-full h-full flex justify-center items-center text-white">
             843 <br /> Clients
-          </Text>
-        </Container>
-        <Container>
+          </div>
+        </FactCircle>
+        <FactCircle>
           <ImageBox src={fact3} />
-          <Text>
+          <div className="z-10 relative text-2xl lg:text-3xl font-semibold w-full h-full flex justify-center items-center text-white">
             315 <br /> Houses
-          </Text>
-        </Container>
-        <Container>
+          </div>
+        </FactCircle>
+        <FactCircle>
           <ImageBox src={fact4} />
-          <Text>
+          <div className="z-10 relative text-2xl lg:text-3xl font-semibold w-full h-full flex justify-center items-center text-white">
             273 <br /> Followers
-          </Text>
-        </Container>
+          </div>
+        </FactCircle>
       </div>
     </Container>
   );
 }
 
-export function Container() {
+export function FactCircle({ children }) {
   return (
-    <div className="w-1/1 md:w-6/12 lg:w-4/12 flex flex-col items-center px-4 text-center">
-      <div className="w-40 h-40 rounded-full overflow-hidden relative">
+    <div className="grid justify-center">
+      <div className="w-40 lg:w-48 h-40 lg:h-48 rounded-full overflow-hidden relative mx-4 my-3 lg:my-12 text-center">
         {children}
       </div>
     </div>
@@ -59,7 +60,7 @@ export function ImageBox({ src }) {
     />
   );
 }
-export function Text({ children }) {
+export function TextContent({ children }) {
   <div className="z-10 relative text-2xl lg:text-3xl font-semibold w-full h-full flex justify-center items-center text-white">
     {children}
   </div>;

@@ -9,7 +9,7 @@ export default function SLayout({ children, className = "" }) {
 }
 export function SMain({ children }) {
   return (
-    <div className="flex flex-wrap justify-center gap-12 py-8 relative">
+    <div className="flex flex-wrap justify-center gap-12 py-6 relative">
       {children}
     </div>
   );
