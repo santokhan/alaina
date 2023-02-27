@@ -6,7 +6,7 @@ import SLayout, { STitle } from "../section-layout/SectionLayout";
 export default function Conscience({ children }) {
   return (
     <div className="">
-      <div className="relative py-5 text-base conscience">
+      <div className="relative lg:pt-20 pb-10 text-base conscience">
         <SLayout>
           <div className="flex flex-wrap justify-center">
             <div className="w-full lg:w-1/3"></div>
