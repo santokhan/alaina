@@ -1,17 +1,17 @@
-import React from "react";
-import SectionHeader from "../layouts/SectionHeader";
-import { BiLike, BiUser, BiCertification } from "react-icons/bi";
-import { HiOutlineUserGroup } from "react-icons/hi";
-import { TbMap2 } from "react-icons/tb";
-import SLayout from "../section-layout/SectionLayout";
+import React from 'react';
+import SectionHeader from '../layouts/SectionHeader';
+import { BiLike, BiUser, BiCertification } from 'react-icons/bi';
+import { HiOutlineUserGroup } from 'react-icons/hi';
+import { TbMap2 } from 'react-icons/tb';
+import SLayout from '../section-layout/SectionLayout';
 
 const HireUs = () => {
   return (
     <div>
       <SectionHeader
-        title={"Why Hire Us?"}
+        title={'Why Hire Us?'}
         description={
-          "Choose us because of our reputation for excellence. For more than 10 years, we’ve earned a name for quality and customer service. The homeowners we serve rely on us for detail-oriented, consistent cleaning services, every single time we clean their homes."
+          'Choose us because of our reputation for excellence. For more than 10 years, we’ve earned a name for quality and customer service. The homeowners we serve rely on us for detail-oriented, consistent cleaning services, every single time we clean their homes.'
         }
       />
       <SLayout>
@@ -101,22 +101,6 @@ const HireUs = () => {
           </div>
         </div>
       </SLayout>
-      <div
-        style={{
-          position: "relative",
-        }}
-        className="bg-sky-400 h-20 my-20"
-      >
-        <img
-          style={{
-            position: "absolute",
-            top: "-20px",
-            right: "0",
-          }}
-          src="https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo1/wp-content/uploads/sites/7/2017/06/footer-ribbon.png"
-          alt=""
-        />
-      </div>
     </div>
   );
 };

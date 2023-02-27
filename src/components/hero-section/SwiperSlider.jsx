@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-import "./swiper-slider.css";
+import './swiper-slider.css';
 
 // import required modules
-import { Pagination, Autoplay, Navigation } from "swiper";
-import HeroSection from "./HeroSection";
-import HeroSection1 from "./HeroSection1";
-import HeroSection2 from "./HeroSection2";
+import { Pagination, Autoplay, Navigation } from 'swiper';
+import HeroSection from './HeroSection';
+import HeroSection1 from './HeroSection1';
+import HeroSection2 from './HeroSection2';
 
 export default function SwiperSlider({ startScroll }) {
   return (
@@ -22,16 +22,15 @@ export default function SwiperSlider({ startScroll }) {
         centeredSlides={true}
         autoplay={{
           delay: 6000,
-          disableOnInteraction: false,
+          disableOnInteraction: false
         }}
         pagination={{
-          clickable: true,
+          clickable: true
         }}
         loop={true}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
-        
       >
         <SwiperSlide>
           <HeroSection startScroll={startScroll}></HeroSection>
