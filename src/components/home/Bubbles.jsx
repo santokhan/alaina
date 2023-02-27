@@ -22,10 +22,10 @@ import { STitle } from '../section-layout/SectionLayout';
 
 export default function SwiperSlider({ startScroll }) {
   return (
-    <div className="bubbles lg:py-20 bg-white">
+    <div className="bubbles py-12 xl:py-20 bg-white">
       <STitle>Cleaning Services That Shine</STitle>
       {/* Mobile size slider */}
-      <div className="block lg:hidden">
+      <div className="block xl:hidden">
         <Swiper
           spaceBetween={0}
           centeredSlides={true}
@@ -92,7 +92,7 @@ export default function SwiperSlider({ startScroll }) {
         </Swiper>
       </div>
       {/* Desktop size slider */}
-      <Container className="hidden lg:block h-[500px]">
+      <Container className="hidden xl:block h-[500px] max-w-6xl relative">
         <div className="mySwiper text-center font-semibold uppercase flex justify-between">
           <div className="relative services-circle-item pos-1">
             <img src={image1} alt="circle" className="h-full object-contain" />
@@ -122,11 +122,11 @@ export default function SwiperSlider({ startScroll }) {
             </div>
           </div>
 
-          <div className="relative services-circle-item pos-5">
+          <div className="relative services-circle-item pos-5 hidden 2xl:block">
             <img src={image5} alt="circle" className="h-full object-contain" />
           </div>
 
-          <div className="relative services-circle-item pos-6">
+          <div className="relative services-circle-item pos-6 hidden 2xl:block">
             <img src={image6} alt="circle" className="h-full object-contain" />
           </div>
         </div>
