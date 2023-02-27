@@ -88,13 +88,13 @@ const BlogPost = () => {
 
               {/* post content start */}
               <div>
-                <h1 className="text-4xl text-gray-600">
+                <h1 className="text-3xl lg:text-4xl text-gray-600">
                   New Cleaning With Hydrogen Peroxide Tips
                 </h1>
-                <p className="py-8">
+                <p className="py-4 lg:py-8">
                   by <strong className="text-gray-500">admin</strong>
                 </p>
-                <p className="text-gray-500 text-xl lg:pr-28">
+                <p className="text-gray-500 text-sm lg:text-xl lg:pr-28">
                   Hiring just the right housekeeper can be life-altering for the
                   busy family. Now this may seem to be a little over-the-top,
                   but I am serious. Think about your life-whether single, a
@@ -135,25 +135,25 @@ const BlogPost = () => {
 
               {/* post content start */}
               <div>
-                <h1 className="text-4xl text-gray-600">
+                <h1 className="text-3xl lg:text-4xl text-gray-600">
                   Apartment Therapy Mom Wisdom on… Taking Care of Your Home
                 </h1>
-                <p className="py-8">
+                <p className="py-4 lg:py-8">
                   by <strong className="text-gray-500">admin</strong>
                 </p>
-                <p className="text-gray-500 text-xl">
+                <p className="text-gray-500 text-sm lg:text-xl">
                   “I am still learning about my home. If you can’t do it
                   yourself, find good service people and treat them well.” —
                   Terry (mom to our Human Resources Coordinator, Louisa)
                 </p>
                 {/* quotes */}
-                <div className="my-8">
-                  <blockquote class="flex items-start text-xl italic font-semibold text-gray-900 dark:text-white">
+                <div className="my-2 lg:my-8">
+                  <blockquote class="flex items-start text-sm lg:text-xl italic font-semibold text-gray-900 dark:text-white">
                     <div>
                       <CgQuote className="w-24 h-24 text-gray-400" />
                     </div>
                     <div className="pl-2 pt-8">
-                      <p className="text-gray-500 text-xl">
+                      <p className="text-gray-500 text-sm lg:text-xl">
                         Raise your hand if you grew up with a mom (or another
                         parental figure) constantly reminding you to clean your
                         room. Often, our earliest memories of figuring out how
@@ -198,14 +198,14 @@ const BlogPost = () => {
                     </div>
                   </div>
                   <div>
-                    <h1 className="text-4xl text-gray-600">
+                    <h1 className="text-3xl lg:text-4xl text-gray-600">
                       A Choose-Your-Own-Adventure Plan for Tackling an Annual
                       Chore
                     </h1>
-                    <p className="py-8">
+                    <p className="py-4 lg:py-8">
                       by <strong className="text-gray-500">admin</strong>
                     </p>
-                    <p className="text-gray-500 text-xl">
+                    <p className="text-gray-500 text-sm lg:text-xl">
                       Hiring just the right housekeeper can be life-altering for
                       the busy family. Now this may seem to be a little
                       over-the-top, but I am serious. Think about your
@@ -239,13 +239,13 @@ const BlogPost = () => {
 
                   {/* blog-content start */}
                   <div>
-                    <h1 className="text-4xl text-gray-600">
+                    <h1 className="text-3xl lg:text-4xl text-gray-600">
                       Try the “Good Enough” Method to Clean Kitchen
                     </h1>
-                    <p className="py-8">
+                    <p className="py-4 lg:py-8">
                       by <strong className="text-gray-500">admin</strong>
                     </p>
-                    <p className="text-gray-500 text-xl">
+                    <p className="text-gray-500 text-sm lg:text-xl">
                       Do you ever casually go about your day, popping into the
                       kitchen for a little peanut butter toast and then the next
                       thing you know you’re turning over the toaster oven
