@@ -1,33 +1,34 @@
-import Header from "../components/header/Header";
-import MassageRates from "../components/products/massage-rates/MassageRates";
-import Footer from "../components/footer/Footer";
-import ContactFrom from "../components/contact/ContactFrom";
-import Gallary from "../components/gallary/Gallary";
-import React, { useRef } from "react";
-import SwiperSlider from "../components/hero-section/SwiperSlider";
-import About from "../components/about-company/AboutCompany";
-import MassageVertical from "../components/mui/tabs/MassageVertical";
-import WhatWeProvide from "../components/what-we-provide/WhatWeProvide";
-import ClientSay from "../components/client-say/ClientSay";
-import SercviceArea from "../components/service-area/ServiceArea";
-import PageLoader from "../components/page-loader/PageLoader";
+import Header from '../components/header/Header';
+import WhatsNew from '../components/products/massage-rates/WhatsNew';
+import Footer from '../components/footer/Footer';
+import ContactFrom from '../components/contact/ContactFrom';
+import Gallary from '../components/gallary/Gallary';
+import React, { useRef } from 'react';
+import SwiperSlider from '../components/hero-section/SwiperSlider';
+import About from '../components/about-company/AboutCompany';
+import MassageVertical from '../components/mui/tabs/MassageVertical';
+import WhatWeProvide from '../components/what-we-provide/WhatWeProvide';
+import ClientSay from '../components/client-say/ClientSay';
+import SercviceArea from '../components/service-area/ServiceArea';
+import PageLoader from '../components/page-loader/PageLoader';
 // import Appointments from "../components/mui/apppointment/Appointment";
-import Chat from "../components/Chat/Chat";
+import Chat from '../components/Chat/Chat';
+import Bubbles from '../components/home/Bubbles';
 
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { blue } from "@mui/material/colors";
-import HowItWorks from "../components/how-it-works/HowITWorks";
-import Conscience from "../components/why-choose-us/Conscience";
-import WhyChooseUs from "../components/why-choose-us/WhyChooseUs";
-import SomeFact from "../components/why-choose-us/SomeFacts";
-import Gallery2 from "../components/gallery-2/Gallery";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { blue } from '@mui/material/colors';
+import HowItWorks from '../components/how-it-works/HowITWorks';
+import Conscience from '../components/why-choose-us/Conscience';
+import WhyChooseUs from '../components/why-choose-us/WhyChooseUs';
+import SomeFact from '../components/why-choose-us/SomeFacts';
+import Gallery2 from '../components/gallery-2/Gallery';
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: blue[600],
-    },
-  },
+      main: blue[600]
+    }
+  }
 });
 
 export default function Home() {
@@ -43,13 +44,14 @@ export default function Home() {
           <PageLoader></PageLoader>
           <Header></Header>
           <SwiperSlider startScroll={startScroll}></SwiperSlider>
+          <Bubbles></Bubbles>
           <Conscience></Conscience>
           <HowItWorks></HowItWorks>
           <hr />
           <WhyChooseUs></WhyChooseUs>
           <SomeFact></SomeFact>
           <Gallery2></Gallery2>
-          <MassageRates myRef={myRef}></MassageRates>
+          <WhatsNew myRef={myRef}></WhatsNew>
           {/* <MassageVertical></MassageVertical>
         <SLayout>
           <div className="bg-white pt-10">

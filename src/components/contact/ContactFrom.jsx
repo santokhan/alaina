@@ -1,23 +1,24 @@
-import { useState } from "react";
-import axios from "axios";
-import SLayout, { SHeader, STitle } from "../section-layout/SectionLayout";
+import { useState } from 'react';
+import axios from 'axios';
+import SLayout, { SHeader, STitle } from '../section-layout/SectionLayout';
 // Mui
-import Alert from "@mui/material/Alert";
-import Stack from "@mui/material/Stack";
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
+
+import contactImage from '../../assets/images/contact-us.jpg';
 
 export default function ContactFrom() {
   return (
     <div id="contact" className="py-8 lg:py-16">
       <SLayout>
         <SHeader>
-          {/* <STitle>Contact Us</STitle> */}
-          <STitle>NEEM CONTACT OP</STitle>
+          <STitle>Contact Us</STitle>
         </SHeader>
         <div className="flex flex-wrap lg:flex-nowrap rounded-3xl bg-white px-2 mt-6">
-          <div className="lg:max-w-sm w-full bg-[#3E2093] rounded-2xl text-white flex flex-col relative overflow-hidden">
+          <div className="lg:max-w-sm w-full rounded-2xl text-white flex flex-col relative overflow-hidden">
             <img
-              className="w-full h-full object-cover"
-              src="/images/contact.jpg"
+              className="w-full h-full object-contain"
+              src={contactImage}
               alt="contact"
             />
           </div>
@@ -32,11 +33,11 @@ export default function ContactFrom() {
 
 export function Form() {
   const [data, setdata] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    message: "",
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    message: ''
   });
 
   function update(obj) {
@@ -48,7 +49,7 @@ export function Form() {
   function Submitting(e) {
     e.preventDefault();
     axios
-      .post("https://formspree.io/f/xbjedjqo", { data: data })
+      .post('https://formspree.io/f/xbjedjqo', { data: data })
       .then((res) => {
         if (res.status === 200) {
           setsubmitted(true);
@@ -64,8 +65,7 @@ export function Form() {
             htmlFor="firstName"
             className="block mb-2 text-sm font-medium text-textgray"
           >
-            {/* First Name */}
-            Voornaam
+            First Name
           </label>
           <input
             type="text"
@@ -85,8 +85,7 @@ export function Form() {
             htmlFor="lastName"
             className="block mb-2 text-sm font-medium text-textgray"
           >
-            {/* Last Name */}
-            AchternaamAchternaam
+            Last Name
           </label>
           <input
             type="text"
@@ -128,8 +127,7 @@ export function Form() {
             htmlFor="phone"
             className="block mb-2 text-sm font-medium text-textgray"
           >
-            {/* Phone */}
-            Telefoon
+            Phone
           </label>
           <input
             type="text"
@@ -150,8 +148,7 @@ export function Form() {
           htmlFor="message"
           className="block mb-2 text-sm font-medium text-textgray"
         >
-          {/* Message */}
-          Bericht
+          Message
         </label>
         <textarea
           id="message"
@@ -169,12 +166,11 @@ export function Form() {
           type="submit"
           className="text-white bg-green-700 hover:brightness-90 focus:ring-4 focus:outline-none focus:ring-green-900 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
         >
-          {/* Submit */}
-          Indienen
+          Submit
         </button>
       </div>
       {submitted ?? (
-        <Stack sx={{ width: "100%" }} spacing={2}>
+        <Stack sx={{ width: '100%' }} spacing={2}>
           <Alert severity="success">Thank you for contact with us.</Alert>
         </Stack>
       )}

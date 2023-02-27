@@ -1,7 +1,9 @@
-export default function SLayout({ children, className = "" }) {
+import { Button } from '@mui/material';
+
+export default function SLayout({ children, className = '' }) {
   return (
-    <section className={"relative " + className}>
-      <div className={"relative " + className}>
+    <section className={'relative ' + className}>
+      <div className={'relative ' + className}>
         <div className="max-w-7xl mx-auto p-4">{children}</div>
       </div>
     </section>
@@ -20,11 +22,11 @@ export function SHeader({ children }) {
 export function SIcon({ children }) {
   return <div className="flex justify-center">{children}</div>;
 }
-export function STitle({ children, className = "" }) {
+export function STitle({ children, className = '' }) {
   return (
     <div
       className={
-        "text-3xl sm:text-4xl lg:text-5xl font-semibold capitalize text-gray-700 flex flex-col items-center" +
+        'text-3xl sm:text-4xl lg:text-5xl font-semibold capitalize text-gray-700 flex flex-col items-center' +
         className
       }
     >
@@ -41,10 +43,90 @@ export const Divider = () => (
   </div>
 );
 
-export function SDes({ children, className = "" }) {
+export function SDes({ children, className = '' }) {
   return (
-    <div className={"text-base text-alaina-gray-thin " + className}>
+    <div className={'text-base text-alaina-gray-thin ' + className}>
       {children}
     </div>
   );
 }
+
+export const RoundedButton = ({ children }) => (
+  <Button
+    variant="contained"
+    sx={{
+      backgroundColor: '#ffffff',
+      borderRadius: '2rem',
+      color: 'rgb(22,163,74)',
+      display: 'flex',
+      alignItems: 'center',
+      fontSize: '1rem',
+      gap: '0.5rem',
+      px: '2rem',
+      py: { xs: '0.75rem', sm: '1rem' },
+      boxShadow: 'none',
+      ':hover': {
+        backgroundColor: 'rgb(22,163,74)',
+        color: 'white',
+        boxShadow: 'none',
+        color: 'white'
+      },
+      ':focus': {
+        backgroundColor: 'rgb(22,163,74)',
+        color: 'white',
+        boxShadow: 'none',
+        color: 'white'
+      }
+    }}
+  >
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M8 2V5"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M16 2V5"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M8 11H16"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M8 16H12"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+    <span className="pt-1">{children ? children : 'GET FREE ESTIMATE'}</span>
+  </Button>
+);

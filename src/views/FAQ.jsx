@@ -1,28 +1,27 @@
-import Header from "../components/header/Header";
-import MassageRates from "../components/products/massage-rates/MassageRates";
-import Footer from "../components/footer/Footer";
-import WhyIcon from "../components/why-icon/WhyIcon";
-import ContactFrom from "../components/contact/ContactFrom";
-import Gallary from "../components/gallary/Gallary";
-import React, { useRef } from "react";
-import SwiperSlider from "../components/hero-section/SwiperSlider";
-import About from "../components/about-company/AboutCompany";
-import MassageVertical from "../components/mui/tabs/MassageVertical";
-import WhyChooseUs from "../components/why-choose-us/WhyChooseUs";
-import WhatWeProvide from "../components/what-we-provide/WhatWeProvide";
-import ClientSay from "../components/client-say/ClientSay";
-import Gallery from "../components/mui/gallery/Gallery";
-import SercviceArea from "../components/service-area/ServiceArea";
-import PageLoader from "../components/page-loader/PageLoader";
+import Header from '../components/header/Header';
+import Footer from '../components/footer/Footer';
+import WhyIcon from '../components/why-icon/WhyIcon';
+import ContactFrom from '../components/contact/ContactFrom';
+import Gallary from '../components/gallary/Gallary';
+import React, { useRef } from 'react';
+import SwiperSlider from '../components/hero-section/SwiperSlider';
+import About from '../components/about-company/AboutCompany';
+import MassageVertical from '../components/mui/tabs/MassageVertical';
+import WhyChooseUs from '../components/why-choose-us/WhyChooseUs';
+import WhatWeProvide from '../components/what-we-provide/WhatWeProvide';
+import ClientSay from '../components/client-say/ClientSay';
+import Gallery from '../components/mui/gallery/Gallery';
+import SercviceArea from '../components/service-area/ServiceArea';
+import PageLoader from '../components/page-loader/PageLoader';
 
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { blue } from "@mui/material/colors";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { blue } from '@mui/material/colors';
 const theme = createTheme({
   palette: {
     primary: {
-      main: blue[600],
-    },
-  },
+      main: blue[600]
+    }
+  }
 });
 
 export default function MassageChair() {

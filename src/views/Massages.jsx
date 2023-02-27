@@ -1,19 +1,18 @@
-import Header from "../components/header/Header";
-import MassageRates from "../components/products/massage-rates/MassageRates";
-import Footer from "../components/footer/Footer";
-import React, { useRef } from "react";
-import SercviceArea from "../components/service-area/ServiceArea";
-import PageLoader from "../components/page-loader/PageLoader";
-import MassageVertical from "../components/mui/tabs/MassageVertical";
+import Header from '../components/header/Header';
+import Footer from '../components/footer/Footer';
+import React, { useRef } from 'react';
+import SercviceArea from '../components/service-area/ServiceArea';
+import PageLoader from '../components/page-loader/PageLoader';
+import MassageVertical from '../components/mui/tabs/MassageVertical';
 
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { blue } from "@mui/material/colors";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { blue } from '@mui/material/colors';
 const theme = createTheme({
   palette: {
     primary: {
-      main: blue[600],
-    },
-  },
+      main: blue[600]
+    }
+  }
 });
 
 export default function Massages() {

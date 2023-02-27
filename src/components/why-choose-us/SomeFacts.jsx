@@ -1,14 +1,14 @@
-import Container from "../layouts/Container";
-import { SDes, STitle } from "../section-layout/SectionLayout";
-import { Col, Image, Row, Title } from "../what-we-provide/WhatWeProvide";
-import fact1 from "../../assets/images/facts/facts-img-1.jpg";
-import fact2 from "../../assets/images/facts/facts-img-2.jpg";
-import fact3 from "../../assets/images/facts/facts-img-3.jpg";
-import fact4 from "../../assets/images/facts/facts-img-4.jpg";
+import Container from '../layouts/Container';
+import { SDes, STitle } from '../section-layout/SectionLayout';
+import { Col, Image, Row, Title } from '../what-we-provide/WhatWeProvide';
+import fact1 from '../../assets/images/facts/facts-img-1.jpg';
+import fact2 from '../../assets/images/facts/facts-img-2.jpg';
+import fact3 from '../../assets/images/facts/facts-img-3.jpg';
+import fact4 from '../../assets/images/facts/facts-img-4.jpg';
 
 export default function SomeFacts() {
   return (
-    <Container className="pb-20">
+    <Container className="py-10">
       <div className="flex flex-col items-center mt-10 mb-6 text-center">
         <STitle>Some Facts About Us</STitle>
       </div>
@@ -45,7 +45,7 @@ export default function SomeFacts() {
 export function FactCircle({ children }) {
   return (
     <div className="grid justify-center">
-      <div className="w-40 lg:w-48 h-40 lg:h-48 rounded-full overflow-hidden relative mx-4 my-3 lg:my-12 text-center">
+      <div className="w-40 lg:w-56 h-40 lg:h-56 rounded-full overflow-hidden relative mx-4 my-3 text-center">
         {children}
       </div>
     </div>
