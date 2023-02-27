@@ -7,18 +7,18 @@
 }
 
 .overFlow {
-  width: 5px;
+  width: 8px;
   top: -10px;
   left: -45px;
   opacity: 20%;
   height: 120px;
   position: absolute;
-  transition: all 0.5s;
+  transition: all 0.8s;
   transform: rotate(30deg);
   background-color: #fff;
   box-shadow: rgb(255, 255, 255) 0px 5px 15px;
 }
 
 .btn-main:hover .overFlow {
-  left: 150px;
+  left: 250px;
 }

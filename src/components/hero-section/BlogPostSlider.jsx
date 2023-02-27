@@ -11,7 +11,7 @@ import { Navigation } from 'swiper';
 
 export default function BlogPostSlider() {
   return (
-    <div className="pr-24">
+    <div>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
           <img

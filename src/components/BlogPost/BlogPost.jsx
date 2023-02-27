@@ -1,22 +1,75 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SLayout from '../section-layout/SectionLayout';
 import { BiMessageDetail } from 'react-icons/bi';
 import { CgQuote } from 'react-icons/cg';
+import { MdArrowForwardIos } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import '../../assets/css/button.css';
 import BlogPostSlider from '../hero-section/BlogPostSlider';
+import { Calendar } from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import '../../assets/css/calender.css';
+import moment from 'moment';
 
 const BlogPost = () => {
+  const [date, setDate] = useState(new Date());
+  const categories = [
+    {
+      id: 1,
+      category: 'Audios'
+    },
+    {
+      id: 2,
+      category: 'Daily Inspiration'
+    },
+    {
+      id: 3,
+      category: 'Freelance'
+    },
+    {
+      id: 4,
+      category: 'Links'
+    },
+    {
+      id: 5,
+      category: 'Mobile'
+    },
+    {
+      id: 6,
+      category: 'Photography'
+    },
+    {
+      id: 7,
+      category: 'Uncategorized'
+    }
+  ];
+
+  const tags = [
+    {
+      id: 1,
+      tag: 'Cleaning'
+    },
+    {
+      id: 1,
+      tag: 'HouseKeeping'
+    },
+    {
+      id: 1,
+      tag: 'Window Cleaner'
+    }
+  ];
+
   return (
     <div>
       <SLayout>
-        <div className="grid grid-cols-1 lg:grid-cols-5">
-          <div className="col-span-4">
+        <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-10 my-20">
+          <div className="col-span-5">
             {/* post-one start */}
             <div>
               {/* post banner start */}
-              <div>
+              <div className="bg-red-500">
                 <img
+                  className="w-full"
                   src="https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo1/wp-content/uploads/sites/7/2017/06/blog-post-img-1.jpg"
                   alt="blog-post"
                 />
@@ -49,7 +102,7 @@ const BlogPost = () => {
                   as organized or clean as you would like. No time to do the
                   smaller tidying jobs that would make a huge difference.
                 </p>
-                <div className="mt-8 btn-main relative overflow-hidden bg-sky-500 w-36 py-4 text-center">
+                <div className="my-8 btn-main relative overflow-hidden bg-sky-500 w-36 py-4 text-center">
                   <Link to="" className="button-primary">
                     Read Post
                   </Link>
@@ -63,6 +116,7 @@ const BlogPost = () => {
               {/* post banner start */}
               <div>
                 <img
+                  className="w-full"
                   src="https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo1/wp-content/uploads/sites/7/2017/06/blog-post-img-2-2.jpg"
                   alt="blog-post"
                 />
@@ -81,13 +135,13 @@ const BlogPost = () => {
 
               {/* post content start */}
               <div>
-                <h1 className="text-4xl text-gray-600 pr-24">
+                <h1 className="text-4xl text-gray-600">
                   Apartment Therapy Mom Wisdom on… Taking Care of Your Home
                 </h1>
                 <p className="py-8">
                   by <strong className="text-gray-500">admin</strong>
                 </p>
-                <p className="text-gray-500 text-xl lg:pr-28">
+                <p className="text-gray-500 text-xl">
                   “I am still learning about my home. If you can’t do it
                   yourself, find good service people and treat them well.” —
                   Terry (mom to our Human Resources Coordinator, Louisa)
@@ -98,7 +152,7 @@ const BlogPost = () => {
                     <div>
                       <CgQuote className="w-24 h-24 text-gray-400" />
                     </div>
-                    <div className="pl-2 pr-32 pt-8">
+                    <div className="pl-2 pt-8">
                       <p className="text-gray-500 text-xl">
                         Raise your hand if you grew up with a mom (or another
                         parental figure) constantly reminding you to clean your
@@ -124,7 +178,7 @@ const BlogPost = () => {
                   {/* video start */}
                   <div>
                     <iframe
-                      width="90%"
+                      width="100%"
                       height="515"
                       src="https://www.youtube.com/embed/Zv11L-ZfrSg"
                       title="YouTube video player"
@@ -144,14 +198,14 @@ const BlogPost = () => {
                     </div>
                   </div>
                   <div>
-                    <h1 className="text-4xl text-gray-600 pr-24">
+                    <h1 className="text-4xl text-gray-600">
                       A Choose-Your-Own-Adventure Plan for Tackling an Annual
                       Chore
                     </h1>
                     <p className="py-8">
                       by <strong className="text-gray-500">admin</strong>
                     </p>
-                    <p className="text-gray-500 text-xl lg:pr-28">
+                    <p className="text-gray-500 text-xl">
                       Hiring just the right housekeeper can be life-altering for
                       the busy family. Now this may seem to be a little
                       over-the-top, but I am serious. Think about your
@@ -161,7 +215,7 @@ const BlogPost = () => {
                       that would make a huge difference.
                     </p>
                   </div>
-                  <div className="mt-8 btn-main relative overflow-hidden bg-sky-500 w-36 py-4 text-center">
+                  <div className="my-8 btn-main relative overflow-hidden bg-sky-500 w-36 py-4 text-center">
                     <Link to="" className="button-primary">
                       Read Post
                     </Link>
@@ -185,13 +239,13 @@ const BlogPost = () => {
 
                   {/* blog-content start */}
                   <div>
-                    <h1 className="text-4xl text-gray-600 pr-24">
+                    <h1 className="text-4xl text-gray-600">
                       Try the “Good Enough” Method to Clean Kitchen
                     </h1>
                     <p className="py-8">
                       by <strong className="text-gray-500">admin</strong>
                     </p>
-                    <p className="text-gray-500 text-xl lg:pr-28">
+                    <p className="text-gray-500 text-xl">
                       Do you ever casually go about your day, popping into the
                       kitchen for a little peanut butter toast and then the next
                       thing you know you’re turning over the toaster oven
@@ -211,7 +265,44 @@ const BlogPost = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-1"></div>
+          <div className="col-span-2">
+            <div className="mt-10 lg:mt-0">
+              <h1 className="text-3xl text-gray-600 pb-8 font-bold">
+                Archives
+              </h1>
+              <p className="uppercase font-bold text-base text-gray-600 pb-2">
+                {moment().format('MMMM Do YYYY')}
+              </p>
+            </div>
+            <Calendar onChange={setDate} value={date} />
+            <div className="my-10">
+              <h1 className="text-3xl text-gray-600 pb-4 font-bold">
+                Post Categories
+              </h1>
+              <ul>
+                {categories.map((item) => (
+                  <li className="flex items-center my-4">
+                    <MdArrowForwardIos className="text-green-500" />
+                    <Link className="text-gray-600 pl-1 hover:text-green-500 hover:pl-3 duration-300">
+                      {item.category}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="my-10">
+              <h1 className="text-3xl text-gray-600 pb-4 font-bold">
+                Popular Tags
+              </h1>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 my-4">
+                {tags.map((item) => (
+                  <div className="py-2 border border-green-500 hover:bg-green-500 duration-300 hover:text-white text-center">
+                    <Link>{item.tag}</Link>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </SLayout>
     </div>

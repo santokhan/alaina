@@ -7,7 +7,7 @@ import SLayout from '../section-layout/SectionLayout';
 
 const HireUs = () => {
   return (
-    <div>
+    <div className="mb-20">
       <SectionHeader
         title={'Why Hire Us?'}
         description={
@@ -20,10 +20,10 @@ const HireUs = () => {
             <div className="flex justify-center items-center shadow rounded-full w-28 h-28 mx-auto bg-gray-100">
               <BiLike className="w-24 h-24 p-5 text-green-500" />
             </div>
-            <h1 className="text-3xl py-5 text-gray-600">
+            <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
               With Us, Your Satisfaction IsGuaranteed
             </h1>
-            <p className="">
+            <p className="text-sm lg:text-xl">
               The experts at The Cleaning Company are committed to providing
               thorough house cleaning services for our valued customers
               nationwide. In order to accomplish this goal, we adhere to strict
@@ -34,10 +34,10 @@ const HireUs = () => {
             <div className="flex justify-center items-center shadow rounded-full w-28 h-28 mx-auto bg-gray-100">
               <BiUser className="w-24 h-24 p-5 text-green-500" />
             </div>
-            <h1 className="text-3xl py-5 text-gray-600">
+            <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
               Our Bonded & InsuredCleaning Team
             </h1>
-            <p className="">
+            <p className="text-sm lg:text-xl">
               Our company is fully bonded and insured, which means you can have
               peace of mind when you hire us as your residential cleaning
               company. Helping our customers feel confident in our services is
@@ -48,10 +48,10 @@ const HireUs = () => {
             <div className="flex justify-center items-center shadow rounded-full w-28 h-28 mx-auto bg-gray-100">
               <HiOutlineUserGroup className="w-24 h-24 p-5 text-green-500" />
             </div>
-            <h1 className="text-3xl py-5 text-gray-600">
-              Our Teams Consistof Fully Trained Employees
+            <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
+              Our Teams Consist of Fully Trained Employees
             </h1>
-            <p className="">
+            <p className="text-sm lg:text-xl">
               It means every individual hired at a franchise location of
               Cleaning Company goes through a thorough screening process, and
               then is trained in every aspect of our home cleaning services.
@@ -62,10 +62,10 @@ const HireUs = () => {
             <div className="flex justify-center items-center shadow rounded-full w-28 h-28 mx-auto bg-gray-100">
               <TbMap2 className="w-24 h-24 p-5 text-green-500" />
             </div>
-            <h1 className="text-3xl py-5 text-gray-600">
+            <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
               Locally Owned HomeCleaning Services
             </h1>
-            <p className="">
+            <p className="text-sm lg:text-xl">
               Life is just too short to clean your own home. You should be able
               to enjoy peace of mind knowing that your home is in good hands,
               while focusing on things that matter more to you, such as your
@@ -76,10 +76,10 @@ const HireUs = () => {
             <div className="flex justify-center items-center shadow rounded-full w-28 h-28 mx-auto bg-gray-100">
               <BiCertification className="w-24 h-24 p-5 text-green-500" />
             </div>
-            <h1 className="text-3xl py-5 text-gray-600">
+            <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
               Free Over the PhoneEstimates
             </h1>
-            <p className="">
+            <p className="text-sm lg:text-xl">
               Cleaning Company service is the key to keeping a beautiful home
               while making more time for yourself and the things you love most.
               Contact us for a FREE estimate.
@@ -89,10 +89,10 @@ const HireUs = () => {
             <div className="flex justify-center items-center shadow rounded-full w-28 h-28 mx-auto bg-gray-100">
               <BiLike className="w-24 h-24 p-5 text-green-500" />
             </div>
-            <h1 className="text-3xl py-5 text-gray-600">
+            <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
               We Guarantee Our Work
             </h1>
-            <p className="">
+            <p className="text-sm lg:text-xl">
               Cleaning Company strives to provide the highest level of quality,
               service and value to each and every customer. If you are not
               completely satisfied with our service, please inform us within 24

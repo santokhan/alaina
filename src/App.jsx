@@ -1,20 +1,20 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./views/Home";
-import BookOnline from "./views/BookOnline";
-import YoungLiving from "./views/YoungLiving";
-import PageLoader from "./components/page-loader/PageLoader";
-import About from "./views/About";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './views/Home';
+import BookOnline from './views/BookOnline';
+import YoungLiving from './views/YoungLiving';
+import PageLoader from './components/page-loader/PageLoader';
+import About from './views/About';
 // import TermsAndConditions from "./views/TermsAndConditions";
-import MassageShiatsu from "./views/MassageShiatsu";
-import MassageSports from "./views/MassageSports";
-import MassageChair from "./views/MassageChair";
-import Massages from "./views/Massages";
-import Contact from "./views/Contact";
-import MassageRelaxation from "./views/MassageRelaxation";
+import MassageShiatsu from './views/MassageShiatsu';
+import MassageSports from './views/MassageSports';
+import MassageChair from './views/MassageChair';
+import Massages from './views/Massages';
+import Contact from './views/Contact';
+import MassageRelaxation from './views/MassageRelaxation';
 
-import "./index.css";
-import Blog from "./views/Blog";
+import './index.css';
+import Blog from './views/Blog';
 
 export default function App() {
   return (

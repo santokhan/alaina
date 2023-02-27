@@ -1,24 +1,24 @@
-import React from "react";
-import SectionHeader from "../layouts/SectionHeader";
-import SLayout from "../section-layout/SectionLayout";
-import { CgFacebook } from "react-icons/cg";
-import { TiSocialTwitter } from "react-icons/ti";
-import { GrInstagram } from "react-icons/gr";
-import { Link } from "react-router-dom";
+import React from 'react';
+import SectionHeader from '../layouts/SectionHeader';
+import SLayout from '../section-layout/SectionLayout';
+import { CgFacebook } from 'react-icons/cg';
+import { TiSocialTwitter } from 'react-icons/ti';
+import { GrInstagram } from 'react-icons/gr';
+import { Link } from 'react-router-dom';
 
 const OurTeam = () => {
   return (
     <div>
       <SectionHeader
-        title={"Our Team"}
+        title={'Our Team'}
         description={
-          "Cleaning Company is a minority owned business with a large group of specially trained, dedicated employees to provide professional service with a personal touch."
+          'Cleaning Company is a minority owned business with a large group of specially trained, dedicated employees to provide professional service with a personal touch.'
         }
       />
       <SLayout>
         <div>
           <div className="grid grid-cols-1 lg:grid-cols-3">
-            <div className="team">
+            <div className="team mb-8 lg:mb-0">
               <div className="w-72 h-72 mx-auto team-main overflow-hidden bg-cover bg-[url('https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo1/wp-content/uploads/sites/7/2021/08/person-img-1.jpeg')]">
                 <div className="team-card flex justify-center items-center bg-black opacity-75 pb-5 pt-2">
                   <Link>
@@ -42,7 +42,7 @@ const OurTeam = () => {
                 </p>
               </div>
             </div>
-            <div className="team">
+            <div className="team mb-8 lg:mb-0">
               <div className="w-72 h-72 mx-auto team-main overflow-hidden bg-cover bg-[url('https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo1/wp-content/uploads/sites/7/2021/08/person-img-2.jpg')]">
                 <div className="team-card flex justify-center items-center bg-black opacity-75 pb-5 pt-2">
                   <Link>
