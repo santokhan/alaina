@@ -7,6 +7,9 @@ import MassageVertical from '../components/mui/tabs/MassageVertical';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { blue } from '@mui/material/colors';
+import WhyHireUs from '../components/services/why-hire-us/WhyHireUs';
+import BreadCrumb from '../components/BreadCrumb';
+import AdditionalServices from '../components/services/additional/AdditionalServices';
 const theme = createTheme({
   palette: {
     primary: {
@@ -26,10 +29,9 @@ export default function Massages() {
       <div className="text-light-sky relative bg-gray-50">
         <PageLoader></PageLoader>
         <Header></Header>
-        <div className="pt-20"></div>
-        <MassageVertical></MassageVertical>
-        <MassageRates myRef={myRef}></MassageRates>
-        <SercviceArea></SercviceArea>
+        <BreadCrumb></BreadCrumb>
+        <WhyHireUs></WhyHireUs>
+        <AdditionalServices></AdditionalServices>
         <Footer></Footer>
       </div>
     </ThemeProvider>

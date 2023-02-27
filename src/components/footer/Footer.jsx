@@ -1,10 +1,10 @@
-import LogoFooter from "../header/logo/LogoFooter";
-import Social from "../social/Social.jsx";
-import React from "react";
-import NavActive from "../header/navbar/NavActive";
-import { Link } from "react-router-dom";
-import theBest from "../../assets/images/the-best-img-1.png";
-import Container from "../layouts/Container";
+import LogoFooter from '../header/logo/LogoFooter';
+import Social from '../social/Social.jsx';
+import React from 'react';
+import NavActive from '../header/navbar/NavActive';
+import { Link } from 'react-router-dom';
+import theBest from '../../assets/images/the-best-img-1.png';
+import Container from '../layouts/Container';
 
 export default function Footer() {
   return (
@@ -72,7 +72,7 @@ export default function Footer() {
   );
 }
 const linkClass =
-  "text-gray-600 font-medium transition-all ease-in block py-2 hover:translate-x-2 hover:text-green-600 ";
+  'text-gray-600 font-medium transition-all ease-in block py-2 hover:translate-x-2 hover:text-green-600 ';
 
 export function NL({ children }) {
   return <ul className="flex flex-col items-start">{children}</ul>;
@@ -106,12 +106,12 @@ export function Subscribe({ children }) {
           type="email"
           id="email"
           aria-describedby="helper-text-explanation"
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-sky-500 focus:border-sky-500 block w-full px-4 py-3 relative rounded-2xl overflow-hidden"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-green-500 focus:border-green-500 block w-full px-4 py-3 relative rounded-2xl overflow-hidden"
           placeholder="biz@ahmassage.nl"
         />
         <button
           type="button"
-          className="text-white bg-sky-700 hover:bg-sky-900 font-medium text-sm px-5 py-2.5 absolute right-2 bottom-2 rounded-xl focus:bottom-[3px] focus:right-1 shadow-xl focus:shadow-none transition-all ease-in capitalize"
+          className="text-white bg-green-700 hover:bg-green-900 font-medium text-sm px-5 py-2.5 absolute right-2 bottom-2 rounded-xl focus:bottom-[3px] focus:right-1 shadow-xl focus:shadow-none transition-all ease-in capitalize"
         >
           Submit
         </button>

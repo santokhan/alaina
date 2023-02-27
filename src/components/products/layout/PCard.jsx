@@ -41,7 +41,6 @@ export function CDes({ children, className = '' }) {
     </div>
   );
 }
-
 export function Price({ price, time, children, className }) {
   return (
     <div className={'flex justify-center ' + className}>

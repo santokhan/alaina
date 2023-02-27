@@ -9,7 +9,7 @@ import About from './views/About';
 import MassageShiatsu from './views/MassageShiatsu';
 import MassageSports from './views/MassageSports';
 import MassageChair from './views/MassageChair';
-import Massages from './views/Massages';
+import Services from './views/Services';
 import Contact from './views/Contact';
 import MassageRelaxation from './views/MassageRelaxation';
 
@@ -28,7 +28,7 @@ export default function App() {
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/terms" element={<MassageChair />}></Route>
-        <Route path="/massages" element={<Massages />}></Route>
+        <Route path="/services" element={<Services />}></Route>
         <Route path="/massages/shiatsu" element={<MassageShiatsu />}></Route>
         <Route path="/massages/sports" element={<MassageSports />}></Route>
         <Route path="/massages/chair" element={<MassageChair />}></Route>

@@ -21,7 +21,7 @@ import HowItWorks from '../components/how-it-works/HowITWorks';
 import Conscience from '../components/why-choose-us/Conscience';
 import WhyChooseUs from '../components/why-choose-us/WhyChooseUs';
 import SomeFact from '../components/why-choose-us/SomeFacts';
-import Gallery2 from '../components/gallery-2/Gallery';
+import OurProjects from '../components/gallery-2/OurProjects';
 
 const theme = createTheme({
   palette: {
@@ -50,19 +50,19 @@ export default function Home() {
           <hr />
           <WhyChooseUs></WhyChooseUs>
           <SomeFact></SomeFact>
-          <Gallery2></Gallery2>
+          <OurProjects></OurProjects>
           <WhatsNew myRef={myRef}></WhatsNew>
           {/* <MassageVertical></MassageVertical>
-        <SLayout>
-          <div className="bg-white pt-10">
-            <SHeader>
-              <STitle>BOEK NU EEN AFSPRAAK</STitle>
-            </SHeader>
-            <SMain>
-              <Appointments></Appointments>
-            </SMain>
-          </div>
-        </SLayout> */}
+          <SLayout>
+            <div className="bg-white pt-10">
+              <SHeader>
+                <STitle>BOEK NU EEN AFSPRAAK</STitle>
+              </SHeader>
+              <SMain>
+                <Appointments></Appointments>
+              </SMain>
+            </div>
+          </SLayout> */}
           <ClientSay></ClientSay>
           {/* <Gallary></Gallary> */}
           <ContactFrom></ContactFrom>

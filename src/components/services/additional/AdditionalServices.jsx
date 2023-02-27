@@ -2,16 +2,21 @@ import React, { useState } from 'react';
 import PLayout from '../../products/layout/PLayout';
 import PHeader, { PTitle } from '../../products/layout/PHeader';
 import PMain from '../../products/layout/PMain';
-import PCard, { CImg, CTitle, CDes, Price } from '../../products/layout/PCard';
+import PCard, {
+  CImg,
+  CTitle,
+  CDes,
+  Price
+} from '../../products/layout/PCardCicle';
 import { AgriculturalContext } from '../../../context/tabs/AgriculturalContext';
 import BookNow from '../../products/layout/BookNow';
 import PDetails from '../../products/layout/PDetails';
-import { SDes, STitle } from '../../section-layout/SectionLayout';
+import { RoundedButton, STitle } from '../../section-layout/SectionLayout';
+import img1 from '../../..//assets/images/whats-new/blog-post-img-1.jpg';
+import img2 from '../../..//assets/images/whats-new/blog-post-img-2.jpg';
+import Container from '../../layouts/Container';
 
-import img1 from '../../../assets/images/whats-new/blog-post-img-1.jpg';
-import img2 from '../../../assets/images/whats-new/blog-post-img-2.jpg';
-
-export default function WhatsNew({ myRef }) {
+export default function AdditionalServices({ myRef }) {
   const [tab, settab] = useState(1);
   function handleTab(id) {
     settab(id);
@@ -22,22 +27,16 @@ export default function WhatsNew({ myRef }) {
       <div>
         <PLayout myRef={myRef}>
           <PHeader>
-            <STitle>Why Hire Us?</STitle>
-            <SDes>
-              {' '}
-              Choose us because of our reputation for excellence. For more than
-              10 years, we’ve earned a name for quality and customer service.
-              The homeowners we serve rely on us for detail-oriented, consistent
-              cleaning services, every single time we clean their homes.
-            </SDes>
+            <STitle>What's New?</STitle>
           </PHeader>
           <PMain>
             <PCard category={4} id="sports">
               <PDetails to="/massages/sports">
                 <CImg src={img1} />
+                <CTitle>New Cleaning With Hydrogen Peroxide Tips</CTitle>
                 <CDes>
-                  Cleaning Company offers a program designed to service
-                  residents of apartments and condominiums.
+                  Hiring just the right housekeeper can be life-altering for the
+                  busy family. Now this may seem to be a little o.
                 </CDes>
               </PDetails>
               <Price price={65} time={60}>
@@ -47,10 +46,10 @@ export default function WhatsNew({ myRef }) {
             <PCard category={4} id="shiatsu">
               <PDetails to="/massages/shiatsu">
                 <CImg src={img2} />
-                <CTitle>Apartment Cleaning</CTitle>
+                <CTitle>Apartment Therapy Mom Wisdom on… Taking Care</CTitle>
                 <CDes>
-                  For over 10 years we’ve performed housekeeping services
-                  according to the wishes of our clients.
+                  “I am still learning about my home. If you can’t do it
+                  yourself, find good service people and trea.
                 </CDes>
               </PDetails>
               <Price price={65} time={60}>
@@ -60,23 +59,10 @@ export default function WhatsNew({ myRef }) {
             <PCard category={2}>
               <PDetails to="/massages/relaxation">
                 <CImg src={img1} />
-                <CTitle>House Cleaning</CTitle>
+                <CTitle>New Cleaning With Hydrogen Peroxide Tips</CTitle>
                 <CDes>
-                  In fact, many people say that moving is one of the most
-                  stressful and exhausting life experiences.
-                </CDes>
-              </PDetails>
-              <Price price={65} time={60}>
-                <BookNow to="/appointments"></BookNow>
-              </Price>
-            </PCard>
-            <PCard category={2}>
-              <PDetails to="/massages/relaxation">
-                <CImg src={img1} />
-                <CTitle>House Cleaning</CTitle>
-                <CDes>
-                  In fact, many people say that moving is one of the most
-                  stressful and exhausting life experiences.
+                  Hiring just the right housekeeper can be life-altering for the
+                  busy family. Now this may seem to be a little o.
                 </CDes>
               </PDetails>
               <Price price={65} time={60}>
