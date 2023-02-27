@@ -19,6 +19,35 @@
     .gradient-green-to-sky {
         background-image: linear-gradient(90deg, #46c6cf, #47a8e3)
     }
+
+    .pcard:hover .moveup {
+        animation: moveup 300ms ease-out forwards;
+    }
+
+    @keyframes moveup {
+        0% {
+            transform: translateY(100%);
+        }
+
+        100% {
+            transform: translateY(0%);
+        }
+    }
+
+    .pcard:hover .cleanicon {
+        transform: scale(0.75);
+        animation: clean 250ms ease-out forwards;
+    }
+
+    @keyframes clean {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(0.75);
+        }
+    }
 }
 
 @tailwind utilities;

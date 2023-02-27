@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="px-4 relative bg-white">
-      <div className="stripe-skew"></div>
+      <div></div>
       <div className="max-w-7xl mx-auto flex flex-wrap justify-between px-4 border-b py-8 lg:py-16 z-10">
         <div className="w-full sm:w-1/2 lg:w-3/12 py-2 lg:py-0">
           <LogoFooter />

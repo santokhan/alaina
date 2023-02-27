@@ -6,6 +6,7 @@ import PCard, { CImg, CTitle, CDes, Price } from "../layout/PCard";
 import { AgriculturalContext } from "../../../context/tabs/AgriculturalContext";
 import BookNow from "../layout/BookNow";
 import PDetails from "../layout/PDetails";
+import { STitle } from "../../section-layout/SectionLayout";
 
 export default function MassageRates({ myRef }) {
   const [tab, settab] = useState(1);
@@ -18,14 +19,8 @@ export default function MassageRates({ myRef }) {
       <div>
         <PLayout myRef={myRef}>
           <PHeader>
-            <PTitle>TARIEVEN AH Massage</PTitle>
+            <STitle>What’s News</STitle>
           </PHeader>
-          {/* <PTabs>
-            <Tab id={1}>All Massages</Tab>
-            <Tab id={2}>30 minuten</Tab>
-            <Tab id={3}>90 minuten</Tab>
-            <Tab id={4}>120 minuite</Tab>
-          </PTabs> */}
           <PMain>
             <PCard category={4} id="sports">
               <PDetails to="/massages/sports">
@@ -57,17 +52,8 @@ export default function MassageRates({ myRef }) {
                 <BookNow to="/appointments"></BookNow>
               </Price>
             </PCard>
-            <PCard category={2} id="chair">
-              <PDetails to="/massages/chair">
-                <CImg src="/images/massages/card/chair.png" />
-                <CTitle>Stoelmassage</CTitle>
-                <CDes>Regio: Brummen +15km</CDes>
-              </PDetails>
-              <Price price={35} time={30}>
-                <BookNow to="/appointments"></BookNow>
-              </Price>
-            </PCard>
           </PMain>
+          <div className="py-5"></div>
         </PLayout>
       </div>
     </AgriculturalContext.Provider>

@@ -5,7 +5,7 @@ import SLayout from "../section-layout/SectionLayout";
 
 export default function HowItWorks() {
   return (
-    <Container className="pt-10 pb-20">
+    <Container className="pt-12 pb-20 my-5">
       <div className="flex flex-col items-center pt-10 text-center">
         <STitle>How It Works</STitle>
         <SDes className="max-w-5xl mx-auto mt-5">

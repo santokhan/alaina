@@ -347,3 +347,21 @@ html {
         transform: translateY(-100%);
     }
 }
+
+.move-up {
+    transform: translateY(0%);
+    animation: moveup 750ms ease-out forwards;
+}
+
+@keyframes moveup {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+
+
+.client-say {
+    background-image: url(../images/cleaning-brush.jpg)
+}

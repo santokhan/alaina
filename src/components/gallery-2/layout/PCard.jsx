@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { GalleryContext } from "../../../context/tabs/GalleryContext";
+import cleanIcon from "../../../assets/images/clean-icon.svg";
 
 export default function PCard({ children, category }) {
   const { tab } = useContext(GalleryContext);
@@ -10,7 +11,7 @@ export default function PCard({ children, category }) {
         className={
           "w-44 sm:w-80 lg:w-[380px] h-44 sm:h-80 lg:h-[380px] " +
           "bg-white shadow-xl transition-all duration-200 ease-out relative overflow-hidden " +
-          " hover:scale-95 group"
+          " hover:scale-95 group pcard "
         }
       >
         {children}
@@ -31,14 +32,17 @@ export function CImg({ src }) {
 }
 export function Effect({ children }) {
   return (
-    <div className="w-full h-full bg-alaina-gray/50 relative items-end hidden  group-hover:flex">
+    <div className="w-full h-full bg-alaina-gray/50 relative items-end hidden group-hover:flex flex-col">
+      <div className="w-full h-full grid place-items-center">
+        <img src={cleanIcon} alt="icon" className="cleanicon w-1/2" />
+      </div>
       {children}
     </div>
   );
 }
 export function CTitle({ children }) {
   return (
-    <div className="px-5 py-4 text-lg font-medium capitalize z-20 bg-alaina-gray text-white w-full text-center">
+    <div className="px-5 py-4 text-lg font-medium capitalize z-20 bg-alaina-gray text-white w-full text-center moveup">
       {"Commercial Cleaning Service"}
     </div>
   );

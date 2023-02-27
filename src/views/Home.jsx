@@ -49,7 +49,6 @@ export default function Home() {
           <WhyChooseUs></WhyChooseUs>
           <SomeFact></SomeFact>
           <Gallery2></Gallery2>
-          <WhatWeProvide></WhatWeProvide>
           <MassageRates myRef={myRef}></MassageRates>
           {/* <MassageVertical></MassageVertical>
         <SLayout>
@@ -65,7 +64,6 @@ export default function Home() {
           <ClientSay></ClientSay>
           {/* <Gallary></Gallary> */}
           <ContactFrom></ContactFrom>
-          <SercviceArea></SercviceArea>
           <Footer></Footer>
         </div>
         <Chat></Chat>
