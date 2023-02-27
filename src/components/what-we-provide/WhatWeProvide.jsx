@@ -5,7 +5,7 @@ import SLayout, {
   STitle,
 } from "../section-layout/SectionLayout";
 
-export default function WhatWePovide({ children }) {
+export default function WhatWePovide() {
   return (
     <div id="whyChooseUs" className="bg-green-50 relative">
       <SLayout>
@@ -35,7 +35,7 @@ export default function WhatWePovide({ children }) {
     </div>
   );
 }
-export function Row({ children, className }) {
+export function Row({ children, className = "" }) {
   return (
     <div
       className={
@@ -47,7 +47,7 @@ export function Row({ children, className }) {
     </div>
   );
 }
-export function Col({ children, order, className }) {
+export function Col({ children, className = "" }) {
   return (
     <div
       className={
@@ -58,7 +58,7 @@ export function Col({ children, order, className }) {
     </div>
   );
 }
-export function Image({ children, className, src }) {
+export function Image({ className = "", src }) {
   return (
     <img
       className={"text-xl font-bold w-24 h-24 object-contain " + className}
@@ -68,9 +68,9 @@ export function Image({ children, className, src }) {
   );
 }
 
-export function Title({ children, className }) {
+export function Title({ children, className = "" }) {
   return (
-    <div className={"text-2xl font-semibold py-2 text-center text-[#535353] " + className}>
+    <div className={"text-2xl font-semibold py-2 text-center " + className}>
       {children}
     </div>
   );

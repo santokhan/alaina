@@ -3,20 +3,30 @@ import Social from "../social/Social.jsx";
 import React from "react";
 import NavActive from "../header/navbar/NavActive";
 import { Link } from "react-router-dom";
+import theBest from "../../assets/images/the-best-img-1.png";
+import Container from "../layouts/Container";
 
 export default function Footer() {
   return (
-    <footer className="px-4 relative bg-white">
-      <div></div>
-      <div className="max-w-7xl mx-auto flex flex-wrap justify-between px-4 border-b py-8 lg:py-16 z-10">
-        <div className="w-full sm:w-1/2 lg:w-3/12 py-2 lg:py-0">
+    <footer className="relative bg-white">
+      <div className="gradient-green-to-sky h-14 sm:h-20 overflow-visible relative">
+        <Container>
+          <img
+            src={theBest}
+            alt="the best"
+            className="absolute -top-[14px] lg:-top-5 right-0 w-40 lg:w-60"
+          />
+        </Container>
+      </div>
+      <div className="max-w-7xl mx-auto flex flex-wrap justify-between px-4 border-b py-8 lg:py-16">
+        <div className="w-full sm:w-1/2 lg:w-3/12 py-2 lg:py-0 sm:px-4">
           <LogoFooter />
           <Subscribe></Subscribe>
           <div className="flex justify-center xl:justify-start pb-4">
             <Social></Social>
           </div>
         </div>
-        <div className="w-auto py-2 lg:py-0">
+        <div className="w-full sm:w-1/2 lg:w-3/12 py-2 lg:py-0 sm:px-4">
           <div className="uppercase font-bold mb-2">Sitemap</div>
           <NL>
             <NLink path="/">home</NLink>
@@ -24,7 +34,7 @@ export default function Footer() {
             <NLink path="/massages">services</NLink>
           </NL>
         </div>
-        <div className="w-auto py-2 lg:py-0 mr-12">
+        <div className="w-full sm:w-1/2 lg:w-3/12 py-2 lg:py-0 sm:px-4">
           <div className="uppercase font-bold mb-2">faq</div>
           <NL>
             <NLink path="/contact">contact</NLink>
@@ -33,7 +43,7 @@ export default function Footer() {
             <NLink path="/massages/shiatsu">shop</NLink>
           </NL>
         </div>
-        <div className="w-full sm:w-1/2 lg:w-3/12 py-2 lg:py-0">
+        <div className="w-full sm:w-1/2 lg:w-3/12 py-2 lg:py-0 sm:px-4">
           <div className="uppercase font-bold mb-2">Contact</div>
           <NL>
             <li className="py-2 flex justify-start items-start gap-2">
@@ -112,9 +122,7 @@ export function Subscribe({ children }) {
 export function Copyright() {
   return (
     <div className="py-6">
-      <div className="text-textgray text-center">
-        Copyright@2021 all right reserved
-      </div>
+      <div className="text-textgray text-center">© 2022 Cleaner Service.</div>
     </div>
   );
 }
@@ -180,4 +188,8 @@ export const Map = () => (
       strokeWidth="1.5"
     />
   </svg>
+);
+
+export const Column = ({ children }) => (
+  <div className="w-full sm:w-1/2 lg:w-3/12 py-2 lg:py-0">{children}</div>
 );

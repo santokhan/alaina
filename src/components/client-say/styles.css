@@ -1,11 +1,11 @@
-.swiper {
+.client-say .swiper {
     width: 100%;
 }
 
-.swiper-slide {
+.client-say .swiper-slide {
     text-align: center;
     font-size: 18px;
-    height: auto;
+    height: auto !important;
 
     /* Center slide text vertically */
     display: flex;
@@ -13,21 +13,21 @@
     align-items: center;
 }
 
-.swiper-slide img {
+.client-say .swiper-slide img {
     display: block;
     object-fit: cover;
 }
 
-.swiper-button-next {
+.client-say .swiper-button-next {
     height: 20px;
 }
 
 @media (width > 768px) {
-    .swiper-button-next {
+    .client-say .swiper-button-next {
         height: 44px;
     }
 
-    .swiper-slide {
+    .client-say .swiper-slide {
         height: auto
     }
 }

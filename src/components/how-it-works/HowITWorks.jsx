@@ -5,48 +5,50 @@ import SLayout from "../section-layout/SectionLayout";
 
 export default function HowItWorks() {
   return (
-    <Container className="pt-12 pb-20 my-5">
-      <div className="flex flex-col items-center pt-10 text-center">
-        <STitle>How It Works</STitle>
-        <SDes className="max-w-5xl mx-auto mt-5">
-          Taking the stress out of any aspect of cleaning is what we specialise
-          in. We will come to your premises and offer a free quote, so you know
-          exactly what you’ll be spending
-        </SDes>
-      </div>
-      <Row>
-        <Col>
-          <Circle number={1} />
-          <Title>
-            Book online in <span className="text-green-400">60 seconds</span>
-          </Title>
-          <SDes className="text-center mt-3">
-            Book & pay online. We’ll match you with a trusted, experienced house
-            cleaner
+    <div className="bg-white lg:py-5">
+      <Container className="pt-12 pb-20">
+        <div className="flex flex-col items-center pt-10 text-center">
+          <STitle>How It Works</STitle>
+          <SDes className="max-w-5xl mx-auto mt-5">
+            Taking the stress out of any aspect of cleaning is what we
+            specialise in. We will come to your premises and offer a free quote,
+            so you know exactly what you’ll be spending
           </SDes>
-        </Col>
-        <Col>
-          <Circle number={2} />
-          <Title>
-            Get a 5 star <span className="text-green-400">cleaner</span>
-          </Title>
-          <SDes className="text-center mt-3">
-            Every cleaner is friendly and reliable. They’ve been
-            background-checked & rated 5-stars
-          </SDes>
-        </Col>
-        <Col>
-          <Circle number={3} />
-          <Title>
-            Manage everything <span className="text-green-400">online</span>
-          </Title>
-          <SDes className="text-center mt-3">
-            Add visits, skip visits, leave notes, and book extra services
-            laundry, fridge and oven cleaning
-          </SDes>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+        <Row>
+          <Col>
+            <Circle number={1} />
+            <Title>
+              Book online in <span className="text-green-400">60 seconds</span>
+            </Title>
+            <SDes className="text-center text-sm mt-3">
+              Book & pay online. We’ll match you with a trusted, experienced
+              house cleaner
+            </SDes>
+          </Col>
+          <Col>
+            <Circle number={2} />
+            <Title>
+              Get a 5 star <span className="text-green-400">cleaner</span>
+            </Title>
+            <SDes className="text-center text-sm mt-3">
+              Every cleaner is friendly and reliable. They’ve been
+              background-checked & rated 5-stars
+            </SDes>
+          </Col>
+          <Col>
+            <Circle number={3} />
+            <Title>
+              Manage everything <span className="text-green-400">online</span>
+            </Title>
+            <SDes className="text-center text-sm mt-3">
+              Add visits, skip visits, leave notes, and book extra services
+              laundry, fridge and oven cleaning
+            </SDes>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 }
 

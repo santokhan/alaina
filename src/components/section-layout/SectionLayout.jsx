@@ -24,14 +24,27 @@ export function STitle({ children, className = "" }) {
   return (
     <div
       className={
-        "text-3xl sm:text-5xl lg:text-6xl font-semibold capitalize text-gray-700 " +
+        "text-3xl sm:text-4xl lg:text-5xl font-semibold capitalize text-gray-700 flex flex-col items-center" +
         className
       }
     >
       {children}
+      <Divider />
     </div>
   );
 }
+export const Divider = () => (
+  <div className="flex items-center my-4 lg:my-8 gap-2">
+    <div className="w-24 lg:w-48 h-[1px] bg-gray-300"></div>
+    <div className="w-[5px] h-[5px] rounded-full bg-gray-300"></div>
+    <div className="w-24 lg:w-48 h-[1px] bg-gray-300"></div>
+  </div>
+);
+
 export function SDes({ children, className = "" }) {
-  return <div className={"text-base  " + className}>{children}</div>;
+  return (
+    <div className={"text-base text-alaina-gray-thin " + className}>
+      {children}
+    </div>
+  );
 }

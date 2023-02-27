@@ -7,7 +7,7 @@ import Stack from "@mui/material/Stack";
 
 export default function ContactFrom() {
   return (
-    <div id="contact">
+    <div id="contact" className="py-8 lg:py-16">
       <SLayout>
         <SHeader>
           {/* <STitle>Contact Us</STitle> */}

@@ -21,9 +21,9 @@ export default function ClientSay({ children }) {
       className="relative client-say text-white pb-16 lg:pb-20"
     >
       <SLayout>
-        <SHeader>
+        <div className="flex justify-center pt-10 lg:pb-6">
           <STitle className="py-6">Our Clients Say</STitle>
-        </SHeader>
+        </div>
         <Swiper
           pagination={{
             type: "fraction",
@@ -33,12 +33,14 @@ export default function ClientSay({ children }) {
           className="mySwiper"
         >
           <SwiperSlide className="bg-sky-600 sm:bg-transparent px-4">
-            <div className="max-w-2xl mx-auto pt-12 sm:pt-16 pb-20 sm:my-10">
+            <div className="max-w-2xl mx-auto pt-5 lg:pb-16 mb-16">
               <div className="flex justify-center items-center">
                 <i className="fa fa-quote-right text-3xl xl:text-5xl"></i>
               </div>
-              <div className="py-2 text-center text-2xl">Esabela Kaif</div>
-              <div className="py-2 text-center">
+              <div className="py-2 text-center font-medium lg:text-2xl">
+                Esabela Kaif
+              </div>
+              <div className="py-2 text-center text-sm lg:text-base">
                 Mensen erkennen zelden hoe graag ze een massage krijgen. Maar ik
                 wil zeggen dat mijn massagesessies op vrijdag na het werk weken
                 vooruit gepland blijven.
@@ -46,12 +48,14 @@ export default function ClientSay({ children }) {
             </div>
           </SwiperSlide>
           <SwiperSlide className="bg-sky-600 sm:bg-transparent px-4">
-            <div className="max-w-2xl mx-auto pt-12 sm:pt-16 pb-20 sm:my-10">
+            <div className="max-w-2xl mx-auto pt-5 lg:pb-16 mb-16">
               <div className="flex justify-center items-center">
                 <i className="fa fa-quote-right text-3xl xl:text-5xl"></i>
               </div>
-              <div className="py-2 text-center text-2xl">Esabela Kaif</div>
-              <div className="py-2 text-center">
+              <div className="py-2 text-center font-medium lg:text-2xl">
+                Esabela Kaif
+              </div>
+              <div className="py-2 text-center text-sm lg:text-base">
                 Mensen erkennen zelden hoe graag ze een massage krijgen. Maar ik
                 wil zeggen dat mijn massagesessies op vrijdag na het werk weken
                 vooruit gepland blijven.
@@ -59,12 +63,14 @@ export default function ClientSay({ children }) {
             </div>
           </SwiperSlide>
           <SwiperSlide className="bg-sky-600 sm:bg-transparent px-4">
-            <div className="max-w-2xl mx-auto pt-12 sm:pt-16 pb-20 sm:my-10">
+            <div className="max-w-2xl mx-auto pt-5 lg:pb-16 mb-16">
               <div className="flex justify-center items-center">
                 <i className="fa fa-quote-right text-3xl xl:text-5xl"></i>
               </div>
-              <div className="py-2 text-center text-2xl">Esabela Kaif</div>
-              <div className="py-2 text-center">
+              <div className="py-2 text-center font-medium lg:text-2xl">
+                Esabela Kaif
+              </div>
+              <div className="py-2 text-center text-sm lg:text-base">
                 Mensen erkennen zelden hoe graag ze een massage krijgen. Maar ik
                 wil zeggen dat mijn massagesessies op vrijdag na het werk weken
                 vooruit gepland blijven.
