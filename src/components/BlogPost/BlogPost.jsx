@@ -62,7 +62,7 @@ const BlogPost = () => {
   return (
     <div>
       <SLayout>
-        <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-10 my-20">
+        <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-10 py-8 lg:my-20">
           <div className="col-span-5">
             <div>
               <img
