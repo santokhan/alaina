@@ -1,13 +1,13 @@
-.swiper {
+.hero-section .swiper {
     width: 100%;
     height: 100%;
 }
 
-.swiper-slide {
+.hero-section .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-    height: 250px;
+    height: 250px !important;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -24,30 +24,30 @@
     align-items: center;
 }
 
-.swiper-slide img {
+.hero-section .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.swiper-pagination-bullet-active {
+.hero-section .swiper-pagination-bullet-active {
     background-color: white;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.hero-section .swiper-button-prev,
+.hero-section .swiper-button-next {
     display: none !important;
 }
 
 @media (width > 576px) {
 
-    .swiper-button-prev,
-    .swiper-button-next {
+    .hero-section .swiper-button-prev,
+    .hero-section .swiper-button-next {
         display: block !important;
     }
 
-    .swiper-slide {
+    .hero-section .swiper-slide {
         text-align: center;
         font-size: 18px;
         background: #fff;
@@ -70,7 +70,7 @@
 }
 
 @media (width > 768px) {
-    .swiper-slide {
+    .hero-section .swiper-slide {
         text-align: center;
         font-size: 18px;
         background: #fff;

@@ -16,7 +16,7 @@ import HeroSection2 from './HeroSection2';
 
 export default function SwiperSlider({ startScroll }) {
   return (
-    <>
+    <div className="hero-section">
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
@@ -42,6 +42,6 @@ export default function SwiperSlider({ startScroll }) {
           <HeroSection2 startScroll={startScroll}></HeroSection2>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
