@@ -15,26 +15,30 @@ export default function SomeFacts() {
       <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-center rounded-[2rem] px-4">
         <FactCircle>
           <ImageBox src={fact1} />
-          <div className="z-10 relative text-2xl lg:text-3xl font-semibold w-full h-full flex justify-center items-center text-white">
-            1255 <br /> Orders
+          <div className="z-10 relative text-2xl lg:text-3xl font-semibold w-full h-full flex flex-col justify-center items-center text-white">
+            <div className="text-xl lg:text-4xl drop-shadow">1255</div>
+            <div className="drop-shadow">Orders</div>
           </div>
         </FactCircle>
         <FactCircle>
           <ImageBox src={fact2} />
-          <div className="z-10 relative text-2xl lg:text-3xl font-semibold w-full h-full flex justify-center items-center text-white">
-            843 <br /> Clients
+          <div className="z-10 relative text-2xl lg:text-3xl font-semibold w-full h-full flex flex-col justify-center items-center text-white">
+            <div className="text-xl lg:text-4xl drop-shadowl">843</div>
+            <div className="drop-shadow">Clients</div>
           </div>
         </FactCircle>
         <FactCircle>
           <ImageBox src={fact3} />
-          <div className="z-10 relative text-2xl lg:text-3xl font-semibold w-full h-full flex justify-center items-center text-white">
-            315 <br /> Houses
+          <div className="z-10 relative text-2xl lg:text-3xl font-semibold w-full h-full flex flex-col justify-center items-center text-white">
+            <div className="text-xl lg:text-4xl drop-shadowl">315</div>
+            <div className="drop-shadow">Houses</div>
           </div>
         </FactCircle>
         <FactCircle>
           <ImageBox src={fact4} />
-          <div className="z-10 relative text-2xl lg:text-3xl font-semibold w-full h-full flex justify-center items-center text-white">
-            273 <br /> Followers
+          <div className="z-10 relative text-2xl lg:text-3xl font-semibold w-full h-full flex flex-col justify-center items-center text-white">
+            <div className="text-xl lg:text-4xl drop-shadowl">273</div>
+            <div className="drop-shadow">Followers</div>
           </div>
         </FactCircle>
       </div>
