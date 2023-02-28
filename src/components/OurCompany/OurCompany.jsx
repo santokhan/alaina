@@ -25,13 +25,13 @@ const OurCompany = () => {
           <h1 className="text-2xl text-gray-600">
             More than 10 years of cleaning experience
           </h1>
-          <p className="text-sm lg:text-xl py-2 pt-5">
+          <p className="text-sm lg:text-base py-2 pt-5">
             Cleaning Company service is a fully integrated janitorial cleaning
             services company that provides comprehensive, high quality, reliable
             cleaning solutions to commercial, corporate, industrial and
             residential clients.
           </p>
-          <p className="text-sm lg:text-xl py-2">
+          <p className="text-sm lg:text-base py-2">
             Our diligent management and work ethic are central to Cleaning
             Company service business philosophy and critical to delivering
             consistent, quality cleaning services. We pride ourselves on making
@@ -50,12 +50,12 @@ const OurCompany = () => {
               <h2 className="text-2xl lg:text-3xl text-gray-600">
                 Our Mission
               </h2>
-              <p className="text-sm lg:text-xl pt-3 lg:pt-8 pb-3 pr-10">
+              <p className="text-sm lg:text-base pt-3 lg:pt-8 pb-3 pr-10">
                 Aims to be a national market leader in the provision of cleaning
                 services delivering reliable, quality, cost effective cleaning
                 solutions to our customers
               </p>
-              <Link className="text-sm lg:text-xl uppercase text-green-500 font-bold hover:text-gray-700 duration-300">
+              <Link className="text-sm lg:text-base uppercase text-green-500 font-bold hover:text-gray-700 duration-300">
                 Contact Us
               </Link>
             </div>
@@ -66,12 +66,12 @@ const OurCompany = () => {
             </div>
             <div className="lg:px-8">
               <h2 className="text-2xl lg:text-3xl text-gray-600">Our Vision</h2>
-              <p className="text-sm lg:text-xl pt-3 lg:pt-8 pb-3 pr-10">
+              <p className="text-sm lg:text-base pt-3 lg:pt-8 pb-3 pr-10">
                 Aims to be a national market leader in the provision of cleaning
                 services delivering reliable, quality, cost effective cleaning
                 solutions to our customers
               </p>
-              <Link className="text-sm lg:text-xl uppercase text-green-500 font-bold hover:text-gray-700 duration-300">
+              <Link className="text-sm lg:text-base uppercase text-green-500 font-bold hover:text-gray-700 duration-300">
                 Contact Us
               </Link>
             </div>

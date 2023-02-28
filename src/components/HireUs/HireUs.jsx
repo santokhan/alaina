@@ -23,7 +23,7 @@ const HireUs = () => {
             <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
               With Us, Your Satisfaction IsGuaranteed
             </h1>
-            <p className="text-sm lg:text-xl">
+            <p className="text-sm lg:text-base">
               The experts at The Cleaning Company are committed to providing
               thorough house cleaning services for our valued customers
               nationwide. In order to accomplish this goal, we adhere to strict
@@ -37,7 +37,7 @@ const HireUs = () => {
             <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
               Our Bonded & InsuredCleaning Team
             </h1>
-            <p className="text-sm lg:text-xl">
+            <p className="text-sm lg:text-base">
               Our company is fully bonded and insured, which means you can have
               peace of mind when you hire us as your residential cleaning
               company. Helping our customers feel confident in our services is
@@ -51,7 +51,7 @@ const HireUs = () => {
             <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
               Our Teams Consist of Fully Trained Employees
             </h1>
-            <p className="text-sm lg:text-xl">
+            <p className="text-sm lg:text-base">
               It means every individual hired at a franchise location of
               Cleaning Company goes through a thorough screening process, and
               then is trained in every aspect of our home cleaning services.
@@ -65,7 +65,7 @@ const HireUs = () => {
             <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
               Locally Owned HomeCleaning Services
             </h1>
-            <p className="text-sm lg:text-xl">
+            <p className="text-sm lg:text-base">
               Life is just too short to clean your own home. You should be able
               to enjoy peace of mind knowing that your home is in good hands,
               while focusing on things that matter more to you, such as your
@@ -79,7 +79,7 @@ const HireUs = () => {
             <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
               Free Over the PhoneEstimates
             </h1>
-            <p className="text-sm lg:text-xl">
+            <p className="text-sm lg:text-base">
               Cleaning Company service is the key to keeping a beautiful home
               while making more time for yourself and the things you love most.
               Contact us for a FREE estimate.
@@ -92,7 +92,7 @@ const HireUs = () => {
             <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
               We Guarantee Our Work
             </h1>
-            <p className="text-sm lg:text-xl">
+            <p className="text-sm lg:text-base">
               Cleaning Company strives to provide the highest level of quality,
               service and value to each and every customer. If you are not
               completely satisfied with our service, please inform us within 24

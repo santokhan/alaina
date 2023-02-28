@@ -15,7 +15,7 @@ const Satisfaction = () => {
             <h1 className="text-4xl text-white pb-5">
               Satisfaction Guaranteed!
             </h1>
-            <p className="text-sm lg:text-xl text-white lg:pl-12">
+            <p className="text-sm lg:text-base text-white lg:pl-12">
               Your satisfaction is 100% guaranteed at Cleaning Company. If you
               are not happy with any area we’ve cleaned, simply call within 24
               hours and we will come back out and reclean it free of charge.

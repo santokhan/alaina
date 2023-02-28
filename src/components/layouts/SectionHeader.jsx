@@ -11,7 +11,7 @@ const SectionHeader = ({ title, description }) => {
         <div className="w-2 h-2 rounded bg-gray-200 mx-1"></div>
         <div className="w-1/2 h-0.5 bg-gray-200"></div>
       </div>
-      <p className="text-sm lg:text-xl">{description}</p>
+      <p className="text-sm lg:text-base">{description}</p>
     </div>
   );
 };

@@ -33,7 +33,9 @@ const OurTeam = () => {
                 </div>
               </div>
               <div className="text-center">
-                <h2 className="text-2xl text-gray-600 py-5">Alan Yarbrough</h2>
+                <h2 className="text-2xl lg:text-3xl text-gray-600 py-5">
+                  Alan Yarbrough
+                </h2>
                 <h3 className="text-xl  pb-5">Managing Director</h3>
                 <div className="w-8 h-0.5 bg-green-500 mb-5 mx-auto"></div>
                 <p className="px-12 ">
@@ -57,7 +59,9 @@ const OurTeam = () => {
                 </div>
               </div>
               <div className="text-center">
-                <h2 className="text-2xl text-gray-600 py-5">Wilford Wood</h2>
+                <h2 className="text-2xl lg:text-3xl text-gray-600 py-5">
+                  Wilford Wood
+                </h2>
                 <h3 className="text-xl  pb-5">Customer Service Manager</h3>
                 <div className="w-8 h-0.5 bg-green-500 mb-5 mx-auto"></div>
                 <p className="px-12 ">
@@ -81,7 +85,9 @@ const OurTeam = () => {
                 </div>
               </div>
               <div className="text-center">
-                <h2 className="text-2xl text-gray-600 py-5">Teresa Phillips</h2>
+                <h2 className="text-2xl lg:text-3xl text-gray-600 py-5">
+                  Teresa Phillips
+                </h2>
                 <h3 className="text-xl  pb-5">Office Administrator</h3>
                 <div className="w-8 h-0.5 bg-green-500 mb-5 mx-auto"></div>
                 <p className="px-12 ">
