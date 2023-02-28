@@ -1,14 +1,22 @@
 import Logo from './logo/Logo';
 import { Container } from '../layouts/Layout';
+import NavBarMobile from '../header/navbar-mobile/Mobile';
 import { Link } from 'react-router-dom';
-
+import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 export default function Header({ children }) {
+  const [dropdown, setdropdown] = useState(false);
+
+  function handleDropdown() {
+    setdropdown(!dropdown);
+  }
+
   return (
-    <div className="bg-white py-2 sm:py-4 border-b-2 lg:border-b-4 border-sky-600">
+    <div className="bg-white py-2 sm:py-4 border-b-2 lg:border-b-4 border-sky-600 relative">
       <Container>
         <div className={'w-full flex justify-between items-center '}>
           <Logo />
@@ -110,18 +118,22 @@ export default function Header({ children }) {
               </svg>
               <span className="pt-1">Get a quote</span>
             </Button>
+
             <IconButton
               size="large"
               edge="start"
               color="inherit"
               aria-label="menu"
               sx={{ mr: 2, display: { sm: 'none' }, margin: 0 }}
+              onClick={handleDropdown}
             >
-              <MenuIcon />
+              {dropdown ? <CloseIcon /> : <MenuIcon />}
             </IconButton>
           </div>
         </div>
       </Container>
+
+      {dropdown ? <NavBarMobile /> : ''}
     </div>
   );
 }
