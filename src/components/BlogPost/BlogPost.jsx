@@ -64,18 +64,12 @@ const BlogPost = () => {
       <SLayout>
         <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-10 my-20">
           <div className="col-span-5">
-            {/* post-one start */}
             <div>
-              {/* post banner start */}
-              <div className="bg-red-500">
-                <img
-                  className="w-full"
-                  src="https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo1/wp-content/uploads/sites/7/2017/06/blog-post-img-1.jpg"
-                  alt="blog-post"
-                />
-              </div>
-
-              {/* post date start */}
+              <img
+                className="w-full rounded- overflow-hidden"
+                src="https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo1/wp-content/uploads/sites/7/2017/06/blog-post-img-1.jpg"
+                alt="blog-post"
+              />
               <div className="flex items-center my-5">
                 <div>
                   <p className="text-green-500 font-bold">JUNE 21, 2017</p>
@@ -86,12 +80,11 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              {/* post content start */}
               <div>
                 <h1 className="text-3xl lg:text-4xl text-gray-600">
                   New Cleaning With Hydrogen Peroxide Tips
                 </h1>
-                <p className="py-4 lg:py-8">
+                <p className="py-4">
                   by <strong className="text-gray-500">admin</strong>
                 </p>
                 <p className="text-gray-500 text-sm lg:text-base lg:pr-28">
@@ -110,19 +103,14 @@ const BlogPost = () => {
                 </div>
               </div>
             </div>
-            <div className="my-10 lg:my-20"></div>
-            {/* post-two start */}
-            <div>
-              {/* post banner start */}
-              <div>
-                <img
-                  className="w-full"
-                  src="https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo1/wp-content/uploads/sites/7/2017/06/blog-post-img-2-2.jpg"
-                  alt="blog-post"
-                />
-              </div>
 
-              {/* post date start */}
+            <div className="my-10 lg:my-20"></div>
+            <div>
+              <img
+                className="w-full rounded- overflow-hidden"
+                src="https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo1/wp-content/uploads/sites/7/2017/06/blog-post-img-2-2.jpg"
+                alt="blog-post"
+              />
               <div className="flex items-center my-5">
                 <div>
                   <p className="text-green-500 font-bold">JUNE 20, 2017</p>
@@ -133,12 +121,11 @@ const BlogPost = () => {
                 </div>
               </div>
 
-              {/* post content start */}
               <div>
                 <h1 className="text-3xl lg:text-4xl text-gray-600">
                   Apartment Therapy Mom Wisdom on… Taking Care of Your Home
                 </h1>
-                <p className="py-4 lg:py-8">
+                <p className="py-4">
                   by <strong className="text-gray-500">admin</strong>
                 </p>
                 <p className="text-gray-500 text-sm lg:text-base">
@@ -175,19 +162,15 @@ const BlogPost = () => {
 
                 {/* third-post start */}
                 <div className="lg:my-24">
-                  {/* video start */}
-                  <div>
-                    <iframe
-                      width="100%"
-                      height="515"
-                      src="https://www.youtube.com/embed/Zv11L-ZfrSg"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  {/* post date start */}
+                  <iframe
+                    width="100%"
+                    height="515"
+                    src="https://www.youtube.com/embed/Zv11L-ZfrSg"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                   <div className="flex items-center my-5">
                     <div>
                       <p className="text-green-500 font-bold">JUNE 19, 2017</p>
@@ -202,7 +185,7 @@ const BlogPost = () => {
                       A Choose-Your-Own-Adventure Plan for Tackling an Annual
                       Chore
                     </h1>
-                    <p className="py-4 lg:py-8">
+                    <p className="py-4">
                       by <strong className="text-gray-500">admin</strong>
                     </p>
                     <p className="text-gray-500 text-sm lg:text-base">
@@ -226,7 +209,6 @@ const BlogPost = () => {
                 {/* fourth-post start */}
                 <div>
                   <BlogPostSlider />
-                  {/* post date start */}
                   <div className="flex items-center my-5">
                     <div>
                       <p className="text-green-500 font-bold">JUNE 18, 2017</p>
@@ -236,13 +218,11 @@ const BlogPost = () => {
                       <p>0</p>
                     </div>
                   </div>
-
-                  {/* blog-content start */}
                   <div>
                     <h1 className="text-3xl lg:text-4xl text-gray-600">
                       Try the “Good Enough” Method to Clean Kitchen
                     </h1>
-                    <p className="py-4 lg:py-8">
+                    <p className="py-4">
                       by <strong className="text-gray-500">admin</strong>
                     </p>
                     <p className="text-gray-500 text-sm lg:text-base">
@@ -294,9 +274,9 @@ const BlogPost = () => {
               <h1 className="text-3xl text-gray-600 pb-4 font-bold">
                 Popular Tags
               </h1>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 my-4">
+              <div className="flex flex-wrap gap-4 my-4">
                 {tags.map((item) => (
-                  <div className="py-2 border border-green-500 hover:bg-green-500 duration-300 hover:text-white text-center">
+                  <div className="px-6 py-2 border border-green-500 hover:bg-green-500 duration-300 hover:text-white text-center rounded-lg">
                     <Link>{item.tag}</Link>
                   </div>
                 ))}
