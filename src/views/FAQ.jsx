@@ -7,11 +7,13 @@ import SLayout from '../components/section-layout/SectionLayout';
 import GeneralQ from '../components/GeneralQ/GeneralQ';
 import SchedulingQ from '../components/SchedulingQ/SchedulingQ';
 import CleaningQ from '../components/CleaningQ/CleaningQ';
+import BreadCrumb from '../components/BreadCrumb';
 
 const FAQ = () => {
   return (
     <div>
       <Header />
+      <BreadCrumb></BreadCrumb>
       <SectionHeader
         title={'Frequently Asked Questions'}
         description={
