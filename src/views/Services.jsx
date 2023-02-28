@@ -10,6 +10,7 @@ import { blue } from '@mui/material/colors';
 import WhyHireUs from '../components/services/why-hire-us/WhyHireUs';
 import BreadCrumb from '../components/BreadCrumb';
 import AdditionalServices from '../components/services/additional/AdditionalServices';
+import Discount from '../components/services/discount/Discount';
 const theme = createTheme({
   palette: {
     primary: {
@@ -32,6 +33,7 @@ export default function Massages() {
         <BreadCrumb></BreadCrumb>
         <WhyHireUs></WhyHireUs>
         <AdditionalServices></AdditionalServices>
+        <Discount></Discount>
         <Footer></Footer>
       </div>
     </ThemeProvider>

@@ -16,6 +16,41 @@ import img1 from '../../..//assets/images/whats-new/blog-post-img-1.jpg';
 import img2 from '../../..//assets/images/whats-new/blog-post-img-2.jpg';
 import Container from '../../layouts/Container';
 
+const data = [
+  [
+    'TV/Accessories',
+    'Shelves',
+    'Picture Frames',
+    'Tables',
+    'Chairs',
+    'Lamps Lighting'
+  ],
+  [
+    'Turn off Lights',
+    'Vents',
+    'Fans',
+    'Shower Caddys',
+    'Trash Cans',
+    'Shower Doors'
+  ],
+  [
+    'Stove Tops',
+    'Toilets Behind',
+    'Bathtubs/Showers',
+    'Microwave',
+    'Return Mats',
+    'Behind Wall Units'
+  ],
+  [
+    'Dishwasher',
+    'Make Beds',
+    'Vacuum Carpets',
+    'Straighten Up',
+    'Trashcan Liners',
+    'Swiffer'
+  ]
+];
+
 export default function AdditionalServices({ myRef }) {
   const [tab, settab] = useState(1);
   function handleTab(id) {
@@ -29,47 +64,20 @@ export default function AdditionalServices({ myRef }) {
           <PHeader>
             <STitle>What's New?</STitle>
           </PHeader>
-          <PMain>
-            <PCard category={4} id="sports">
-              <PDetails to="/massages/sports">
-                <CImg src={img1} />
-                <CTitle>New Cleaning With Hydrogen Peroxide Tips</CTitle>
-                <CDes>
-                  Hiring just the right housekeeper can be life-altering for the
-                  busy family. Now this may seem to be a little o.
-                </CDes>
-              </PDetails>
-              <Price price={65} time={60}>
-                <BookNow to="/appointments"></BookNow>
-              </Price>
-            </PCard>
-            <PCard category={4} id="shiatsu">
-              <PDetails to="/massages/shiatsu">
-                <CImg src={img2} />
-                <CTitle>Apartment Therapy Mom Wisdom on… Taking Care</CTitle>
-                <CDes>
-                  “I am still learning about my home. If you can’t do it
-                  yourself, find good service people and trea.
-                </CDes>
-              </PDetails>
-              <Price price={65} time={60}>
-                <BookNow to="/appointments"></BookNow>
-              </Price>
-            </PCard>
-            <PCard category={2}>
-              <PDetails to="/massages/relaxation">
-                <CImg src={img1} />
-                <CTitle>New Cleaning With Hydrogen Peroxide Tips</CTitle>
-                <CDes>
-                  Hiring just the right housekeeper can be life-altering for the
-                  busy family. Now this may seem to be a little o.
-                </CDes>
-              </PDetails>
-              <Price price={65} time={60}>
-                <BookNow to="/appointments"></BookNow>
-              </Price>
-            </PCard>
-          </PMain>
+          <div className="flex flex-wrap justify-between">
+            {data.map((arr, arrI) => (
+              <div className="w-1/2 lg:w-1/4 ">
+                <ul className="space-y-2" key={arrI}>
+                  {arr.map((e, i) => (
+                    <li key={i}>
+                      <i className="fa fa-check text-green-400"></i>
+                      <span className="px-2">{e}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
           <div className="py-5"></div>
         </PLayout>
       </div>

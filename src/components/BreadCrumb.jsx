@@ -7,7 +7,7 @@ export default function BreadCrumb() {
   let pathnameArr = pathname.split('/').filter((n) => n);
 
   return (
-    <div className="bg-gray-100 py-4">
+    <div className="bg-gray-100 py-4 shadow-inner">
       <Container>
         <Breadcrumbs aria-label="breadcrumb">
           <Link underline="hover" color="inherit" href="/">

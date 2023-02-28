@@ -3,7 +3,7 @@ import NavActive from './NavActive';
 
 export default function Navbar({ children }) {
   return (
-    <div className="w-full border-gray-200 h-14 hidden lg:block shadow-lg">
+    <div className="w-full border-gray-200 h-14 hidden lg:block">
       <div className="h-full flex flex-wrap items-center justify-center max-w-screen-xl mx-auto px-4">
         <ul className="w-full flex justify-between mt-4 font-medium lg:mt-0 text-md">
           <NLink to="/">home</NLink>
