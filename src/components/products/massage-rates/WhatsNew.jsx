@@ -10,6 +10,28 @@ import { SDes, STitle } from '../../section-layout/SectionLayout';
 
 import img1 from '../../../assets/images/whats-new/blog-post-img-1.jpg';
 import img2 from '../../../assets/images/whats-new/blog-post-img-2.jpg';
+import img3 from '../../../assets/images/whats-new/blog-post-img-1.jpg';
+
+const data = [
+  {
+    src: img1,
+    title: 'House Cleaning',
+    desc: 'Cleaning Company offers a program designed to service residents of apartments and condominiums.',
+    url: '/massages/sports'
+  },
+  {
+    src: img2,
+    title: 'Apartment Cleaning',
+    desc: ' For over 10 years we’ve performed housekeeping services according to the wishes of our clients.',
+    url: '/massages/shiatsu'
+  },
+  {
+    src: img3,
+    title: 'House Cleaning',
+    desc: 'In fact, many people say that moving is one of the most stressful and exhausting life experiences.',
+    url: '/massages/relaxation'
+  }
+];
 
 export default function WhatsNew({ myRef }) {
   const [tab, settab] = useState(1);
@@ -24,7 +46,6 @@ export default function WhatsNew({ myRef }) {
           <PHeader>
             <STitle>Why Hire Us?</STitle>
             <SDes>
-              {' '}
               Choose us because of our reputation for excellence. For more than
               10 years, we’ve earned a name for quality and customer service.
               The homeowners we serve rely on us for detail-oriented, consistent
@@ -32,57 +53,16 @@ export default function WhatsNew({ myRef }) {
             </SDes>
           </PHeader>
           <PMain>
-            <PCard category={4} id="sports">
-              <PDetails to="/massages/sports">
-                <CImg src={img1} />
-                <CDes>
-                  Cleaning Company offers a program designed to service
-                  residents of apartments and condominiums.
-                </CDes>
-              </PDetails>
-              <Price price={65} time={60}>
-                <BookNow to="/appointments"></BookNow>
-              </Price>
-            </PCard>
-            <PCard category={4} id="shiatsu">
-              <PDetails to="/massages/shiatsu">
-                <CImg src={img2} />
-                <CTitle>Apartment Cleaning</CTitle>
-                <CDes>
-                  For over 10 years we’ve performed housekeeping services
-                  according to the wishes of our clients.
-                </CDes>
-              </PDetails>
-              <Price price={65} time={60}>
-                <BookNow to="/appointments"></BookNow>
-              </Price>
-            </PCard>
-            <PCard category={2}>
-              <PDetails to="/massages/relaxation">
-                <CImg src={img1} />
-                <CTitle>House Cleaning</CTitle>
-                <CDes>
-                  In fact, many people say that moving is one of the most
-                  stressful and exhausting life experiences.
-                </CDes>
-              </PDetails>
-              <Price price={65} time={60}>
-                <BookNow to="/appointments"></BookNow>
-              </Price>
-            </PCard>
-            <PCard category={2}>
-              <PDetails to="/massages/relaxation">
-                <CImg src={img1} />
-                <CTitle>House Cleaning</CTitle>
-                <CDes>
-                  In fact, many people say that moving is one of the most
-                  stressful and exhausting life experiences.
-                </CDes>
-              </PDetails>
-              <Price price={65} time={60}>
-                <BookNow to="/appointments"></BookNow>
-              </Price>
-            </PCard>
+            {data.map((e, i) => (
+              <PCard category={4} id="sports">
+                <PDetails to="/massages/sports">
+                  <CImg src={e.src} />
+                  <CTitle>{e.title}</CTitle>
+                  <CDes>{e.desc}</CDes>
+                </PDetails>
+                <BookNow to={e.url}></BookNow>
+              </PCard>
+            ))}
           </PMain>
           <div className="py-5"></div>
         </PLayout>

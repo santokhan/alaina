@@ -13,19 +13,19 @@ const OurValues = () => {
         }
       />
       <SLayout>
-        <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div>
             <img
-              className="w-full h-full"
+              className="w-full h-full object-contain"
               src="https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo1/wp-content/uploads/sites/7/2017/06/about-page-img-2.jpg"
               alt=""
             />
           </div>
           <div className="lg:px-8 mt-8 lg:mt-0">
-            <ul className="py-2">
+            <ul className="py-2 space-y-3">
               <li className="flex justify-start items-baseline pb-6 lg:pb-2">
                 <BsCheckLg className="w-12 text-green-500" />
-                <p className="text-sm lg:text-xl pl-2">
+                <p className="text-sm lg:text-base pl-2">
                   <strong className="text-gray-600">Client oriented:</strong> We
                   serve our clients as if we were serving ourselves. We value
                   their feedback and we use it to improve our work.
@@ -33,7 +33,7 @@ const OurValues = () => {
               </li>
               <li className="flex justify-start items-baseline pb-2">
                 <BsCheckLg className="w-12 text-green-500" />
-                <p className="text-sm lg:text-xl pl-2">
+                <p className="text-sm lg:text-base pl-2">
                   <strong className="text-gray-600">
                     Eco-Friendly Oriented:
                   </strong>{' '}
@@ -43,7 +43,7 @@ const OurValues = () => {
               </li>
               <li className="flex justify-start items-baseline pb-6 lg:pb-2">
                 <BsCheckLg className="w-20 text-green-500" />
-                <p className="text-sm lg:text-xl pl-2">
+                <p className="text-sm lg:text-base pl-2">
                   <strong className="text-gray-600">
                     Excellence and Innovation:
                   </strong>{' '}
@@ -55,7 +55,7 @@ const OurValues = () => {
               </li>
               <li className="flex justify-start items-baseline pb-6 lg:pb-2">
                 <BsCheckLg className="w-20 text-green-500" />
-                <p className="text-sm lg:text-xl pl-2">
+                <p className="text-sm lg:text-base pl-2">
                   <strong className="text-gray-600">Expansion / Growth:</strong>{' '}
                   We make ourselves known in the community; we create long term
                   relations, while constantly expanding. Therefore, we are
