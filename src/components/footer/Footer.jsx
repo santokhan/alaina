@@ -39,8 +39,8 @@ export default function Footer() {
           <NL>
             <NLink path="/contact">contact</NLink>
             <NLink path="/#overview">blog</NLink>
-            <NLink path="/massages/sports">testimonials</NLink>
-            <NLink path="/massages/shiatsu">shop</NLink>
+            <NLink path="/services/vacational">testimonials</NLink>
+            <NLink path="/services/residentail">shop</NLink>
           </NL>
         </div>
         <div className="w-full sm:w-1/2 lg:w-3/12 py-2 lg:py-0 sm:px-4">

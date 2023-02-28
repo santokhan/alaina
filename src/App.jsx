@@ -6,16 +6,16 @@ import YoungLiving from './views/YoungLiving';
 import PageLoader from './components/page-loader/PageLoader';
 import About from './views/About';
 // import TermsAndConditions from "./views/TermsAndConditions";
-import MassageShiatsu from './views/MassageShiatsu';
-import MassageSports from './views/MassageSports';
-import MassageChair from './views/MassageChair';
 import Services from './views/Services';
 import Contact from './views/Contact';
-import MassageRelaxation from './views/MassageRelaxation';
 
 import './index.css';
 import Blog from './views/Blog';
 import FAQ from './views/FAQ';
+import ResidentialCleaning from './views/ResidentialCleaning';
+import VacationalCleaning from './views/VacationalCleaning';
+import CommercialCleaning from './views/CommercialCleaning';
+import OfficeCleaning from './views/OfficeCleaning';
 
 export default function App() {
   return (
@@ -29,15 +29,20 @@ export default function App() {
         <Route path="/faq" element={<FAQ />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/terms" element={<MassageChair />}></Route>
         <Route path="/services" element={<Services />}></Route>
-        <Route path="/massages/shiatsu" element={<MassageShiatsu />}></Route>
-        <Route path="/massages/sports" element={<MassageSports />}></Route>
-        <Route path="/massages/chair" element={<MassageChair />}></Route>
         <Route
-          path="/massages/relaxation"
-          element={<MassageRelaxation />}
+          path="/services/residential"
+          element={<ResidentialCleaning />}
         ></Route>
+        <Route
+          path="/services/vacational"
+          element={<VacationalCleaning />}
+        ></Route>
+        <Route
+          path="/services/commercial"
+          element={<CommercialCleaning />}
+        ></Route>
+        <Route path="/services/office" element={<OfficeCleaning />}></Route>
         <Route path="*" element={<Home />}></Route>
       </Routes>
     </BrowserRouter>

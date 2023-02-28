@@ -12,8 +12,10 @@ import { AgriculturalContext } from '../../../context/tabs/AgriculturalContext';
 import BookNow from '../../products/layout/BookNow';
 import PDetails from '../../products/layout/PDetails';
 import { RoundedButton, STitle } from '../../section-layout/SectionLayout';
-import img1 from '../../..//assets/images/whats-new/blog-post-img-1.jpg';
-import img2 from '../../..//assets/images/whats-new/blog-post-img-2.jpg';
+import img1 from '../../..//assets/images/services/residential.jpg';
+import img2 from '../../..//assets/images/services/vacational.jpg';
+import img3 from '../../..//assets/images/services/commercial.jpg';
+import img4 from '../../..//assets/images/services/office.jpg';
 import Container from '../../layouts/Container';
 
 export default function WhyHireUs({ myRef }) {
@@ -27,29 +29,29 @@ export default function WhyHireUs({ myRef }) {
       <div>
         <PLayout myRef={myRef}>
           <PHeader>
-            <STitle>What's New?</STitle>
+            <STitle>Our Services</STitle>
           </PHeader>
           <PMain>
-            <PCard category={4} id="sports">
-              <PDetails to="/massages/sports">
+            <PCard category={4} id="residential">
+              <PDetails to="/services/residential">
                 <CImg src={img1} />
-                <CTitle>Apartment Cleaning</CTitle>{' '}
+                <CTitle>Residential Cleaning</CTitle>{' '}
                 <CDes>
-                  Cleaning Company offers a program designed to service
-                  residents of apartments and condominiums.
+                  Refresh your space, renew your life with our expert
+                  residential cleaning services which is great.
                 </CDes>
               </PDetails>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
               </Price>
             </PCard>
-            <PCard category={4} id="shiatsu">
-              <PDetails to="/massages/shiatsu">
+            <PCard category={4} id="vacational">
+              <PDetails to="/services/vacational">
                 <CImg src={img2} />
-                <CTitle>Apartment Cleaning</CTitle>
+                <CTitle>Vacational Cleaning</CTitle>
                 <CDes>
-                  “I am still learning about my home. If you can’t do it
-                  yourself, find good service people and trea.
+                  Leave the cleaning to us, so you can focus on making vacation
+                  memories that last a lifetime.
                 </CDes>
               </PDetails>
               <Price price={65} time={60}>
@@ -57,12 +59,12 @@ export default function WhyHireUs({ myRef }) {
               </Price>
             </PCard>
             <PCard category={2}>
-              <PDetails to="/massages/relaxation">
-                <CImg src={img1} />
-                <CTitle>House Cleaning</CTitle>
+              <PDetails to="/services/commercial">
+                <CImg src={img3} />
+                <CTitle>Commercial Cleaning</CTitle>
                 <CDes>
-                  Hiring just the right housekeeper can be life-altering for the
-                  busy family. Now this may seem to be a little o.
+                  Cleanliness that means business - trust us to keep your
+                  commercial space sparkling and take a great service.
                 </CDes>
               </PDetails>
               <Price price={65} time={60}>
@@ -70,12 +72,12 @@ export default function WhyHireUs({ myRef }) {
               </Price>
             </PCard>
             <PCard category={4} id="sports">
-              <PDetails to="/massages/sports">
-                <CImg src={img1} />
-                <CTitle>Move In / Move Out</CTitle>
+              <PDetails to="/services/office">
+                <CImg src={img4} />
+                <CTitle>Office Cleaning</CTitle>
                 <CDes>
-                  Hiring just the right housekeeper can be life-altering for the
-                  busy family. Now this may seem to be a little o.
+                  A clean office, a productive team - let us take care of the
+                  cleaning, so you can focus on your business.
                 </CDes>
               </PDetails>
               <Price price={65} time={60}>
@@ -84,7 +86,7 @@ export default function WhyHireUs({ myRef }) {
             </PCard>
             {/*  */}
             <PCard category={4} id="sports">
-              <PDetails to="/massages/sports">
+              <PDetails to="/services/vacational">
                 <CImg src={img1} />
                 <CTitle>Apartment Cleaning</CTitle>{' '}
                 <CDes>
@@ -97,7 +99,7 @@ export default function WhyHireUs({ myRef }) {
               </Price>
             </PCard>
             <PCard category={4} id="shiatsu">
-              <PDetails to="/massages/shiatsu">
+              <PDetails to="/services/residentail">
                 <CImg src={img2} />
                 <CTitle>Apartment Cleaning</CTitle>
                 <CDes>

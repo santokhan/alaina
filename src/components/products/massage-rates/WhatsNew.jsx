@@ -17,19 +17,19 @@ const data = [
     src: img1,
     title: 'House Cleaning',
     desc: 'Cleaning Company offers a program designed to service residents of apartments and condominiums.',
-    url: '/massages/sports'
+    url: '/services/vacational'
   },
   {
     src: img2,
     title: 'Apartment Cleaning',
     desc: ' For over 10 years we’ve performed housekeeping services according to the wishes of our clients.',
-    url: '/massages/shiatsu'
+    url: '/services/residentail'
   },
   {
     src: img3,
     title: 'House Cleaning',
     desc: 'In fact, many people say that moving is one of the most stressful and exhausting life experiences.',
-    url: '/massages/relaxation'
+    url: '/services/office'
   }
 ];
 
@@ -55,7 +55,7 @@ export default function WhatsNew({ myRef }) {
           <PMain>
             {data.map((e, i) => (
               <PCard category={4} id="sports">
-                <PDetails to="/massages/sports">
+                <PDetails to="/services/vacational">
                   <CImg src={e.src} />
                   <CTitle>{e.title}</CTitle>
                   <CDes>{e.desc}</CDes>

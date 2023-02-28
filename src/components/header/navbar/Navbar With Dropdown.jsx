@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import Logo from "../logo/Logo";
-import NavActive from "./NavActive";
+import { Link } from 'react-router-dom';
+import Logo from '../logo/Logo';
+import NavActive from './NavActive';
 
 export default function Navbar({ children }) {
   return (
@@ -19,11 +19,11 @@ export default function Navbar({ children }) {
             </button>
             <div className="z-10 w-44 hidden group-hover:block absolute top-full left-0 bg-transparent">
               <ul className="py-2 text-sm text-gray-700 bg-green-50 mt-5 shadow">
-                <DDLink to="/massages/sports">sports</DDLink>
-                <DDLink to="/massages/shiatsu">shiatsu</DDLink>
-                <DDLink to="/massages/chair">stoel</DDLink>
-                {/* <DDLink to="/massages/relaxation">relaxation</DDLink> */}
-                <DDLink to="/massages/relaxation">ontspanning</DDLink>
+                <DDLink to="/services/vacational">sports</DDLink>
+                <DDLink to="/services/residentail">shiatsu</DDLink>
+                <DDLink to="/services/commercial">stoel</DDLink>
+                {/* <DDLink to="/services/office">relaxation</DDLink> */}
+                <DDLink to="/services/office">ontspanning</DDLink>
               </ul>
             </div>
           </div>
@@ -37,7 +37,7 @@ export default function Navbar({ children }) {
 }
 
 const linkClass =
-  "hover:underline hover:underline-offset-4 hover:decoration-2 text-gray-900 transition-all ease-in uppercase ";
+  'hover:underline hover:underline-offset-4 hover:decoration-2 text-gray-900 transition-all ease-in uppercase ';
 
 export function NItem({ children, to }) {
   return (
