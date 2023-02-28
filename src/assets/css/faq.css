@@ -1,0 +1,100 @@
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.faq-question:hover .plus {
+  color: #6ec1e4;
+  border-color: #6ec1e4;
+}
+
+.faq-question:hover .panel-title {
+  color: #6ec1e4;
+  transform: translate(10px, 0);
+}
+
+.panel-title {
+  font-size: 22px;
+  width: 100%;
+  color: #16a34a;
+  position: relative;
+  margin: 0;
+  font-weight: bold;
+  padding: 15px 10px 0 95px;
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.panel-content {
+  font-size: 16px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.panel:checked ~ .panel-content {
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  border: 2px solid #16a34a;
+  color: #16a34a;
+  padding: 3px 12px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 42px;
+  line-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .faq-question {
+    padding: 20px 0;
+    overflow: hidden;
+  }
+  .panel-title {
+    font-size: 15px;
+    padding: 10px 10px 0 70px;
+  }
+
+  .plus {
+    font-size: 30px;
+    padding: 2px 8px;
+  }
+}

@@ -15,6 +15,7 @@ import MassageRelaxation from './views/MassageRelaxation';
 
 import './index.css';
 import Blog from './views/Blog';
+import FAQ from './views/FAQ';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/living" element={<YoungLiving />}></Route>
         <Route path="/pageloader" element={<PageLoader />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/faq" element={<FAQ />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/terms" element={<MassageChair />}></Route>
