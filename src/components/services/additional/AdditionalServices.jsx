@@ -59,10 +59,10 @@ export default function AdditionalServices({ myRef }) {
 
   return (
     <AgriculturalContext.Provider value={{ tab, handleTab }}>
-      <div>
+      <div className="lg:py-10">
         <PLayout myRef={myRef}>
           <PHeader>
-            <STitle>What's New?</STitle>
+            <STitle>Additional Services</STitle>
           </PHeader>
           <div className="flex flex-wrap justify-between">
             {data.map((arr, arrI) => (
@@ -70,7 +70,7 @@ export default function AdditionalServices({ myRef }) {
                 <ul className="space-y-2" key={arrI}>
                   {arr.map((e, i) => (
                     <li key={i}>
-                      <i className="fa fa-check text-green-400"></i>
+                      <i className="fa fa-check text-green-400 drop-shadow"></i>
                       <span className="px-2">{e}</span>
                     </li>
                   ))}
