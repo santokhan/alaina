@@ -1,19 +1,18 @@
 import React from 'react';
 import SectionHeader from '../layouts/SectionHeader';
-import SLayout from '../section-layout/SectionLayout';
+import SLayout, { SDes, STitle } from '../section-layout/SectionLayout';
 import { BiBookmarkAltPlus } from 'react-icons/bi';
+import Container from '../layouts/Container';
 
 const CompanyHistory = () => {
   return (
-    <div>
-      <SectionHeader
-        title={'History of Cleaning Company'}
-        description={
-          'Providing house and offices cleaning services for more than 10 years'
-        }
-      />
+    <Container className="py-5 lg:py-10">
+      <STitle>History of Cleaning Company</STitle>
+      <SDes className="text-center">
+        Providing house and offices cleaning services for more than 10 years
+      </SDes>
       <SLayout>
-        <div>
+        <div className="py-5">
           <div className="text-center">
             <p className="text-sm lg:text-base lg:px-36">
               The Cleaning Company is widely recognized for our commitment to
@@ -61,7 +60,7 @@ const CompanyHistory = () => {
           </div>
         </div>
       </SLayout>
-    </div>
+    </Container>
   );
 };
 

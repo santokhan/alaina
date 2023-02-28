@@ -3,16 +3,16 @@ import SLayout from '../section-layout/SectionLayout';
 
 const Satisfaction = () => {
   return (
-    <div className="my-12">
+    <div className="lg:py-10">
       <SLayout>
-        <div className="lg:flex relative justify-between items-center bg-sky-400 py-8">
+        <div className="lg:flex relative justify-between items-center bg-sky-400 rounded-2xl py-8 lg:py-12">
           <img
-            className="absolute satisfaction w-80 h-80 hidden lg:block"
+            className="absolute bottom-0 left-0 w-80 h-80 hidden lg:block"
             src="https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo1/wp-content/uploads/sites/7/2017/06/banner-guaranteed-img.png"
             alt=""
           />
           <div className="text-center lg:w-3/4 lg:ml-72 px-5 lg:px-0">
-            <h1 className="text-4xl text-white pb-5">
+            <h1 className="text-2xl lg:text-4xl text-white pb-5 font-semibold">
               Satisfaction Guaranteed!
             </h1>
             <p className="text-sm lg:text-base text-white lg:pl-12">

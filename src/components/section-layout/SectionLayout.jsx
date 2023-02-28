@@ -26,7 +26,7 @@ export function STitle({ children, className = '' }) {
   return (
     <div
       className={
-        'text-3xl sm:text-4xl lg:text-5xl font-semibold capitalize text-gray-700 flex flex-col items-center' +
+        'text-3xl sm:text-4xl lg:text-5xl font-semibold capitalize text-gray-700 flex flex-col items-center text-center ' +
         className
       }
     >
@@ -127,6 +127,8 @@ export const RoundedButton = ({ children }) => (
         strokeLinejoin="round"
       />
     </svg>
-    <span className="pt-1">{children ? children : 'GET FREE ESTIMATE'}</span>
+    <span className="pt-1 whitespace-nowrap">
+      {children ? children : 'GET FREE ESTIMATE'}
+    </span>
   </Button>
 );

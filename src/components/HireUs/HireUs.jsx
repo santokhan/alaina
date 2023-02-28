@@ -3,25 +3,27 @@ import SectionHeader from '../layouts/SectionHeader';
 import { BiLike, BiUser, BiCertification } from 'react-icons/bi';
 import { HiOutlineUserGroup } from 'react-icons/hi';
 import { TbMap2 } from 'react-icons/tb';
-import SLayout from '../section-layout/SectionLayout';
+import SLayout, { SDes, STitle } from '../section-layout/SectionLayout';
+import Container from '../layouts/Container';
 
 const HireUs = () => {
   return (
-    <div className="mb-20">
-      <SectionHeader
-        title={'Why Hire Us?'}
-        description={
-          'Choose us because of our reputation for excellence. For more than 10 years, we’ve earned a name for quality and customer service. The homeowners we serve rely on us for detail-oriented, consistent cleaning services, every single time we clean their homes.'
-        }
-      />
+    <Container className="py-10 lg:py-20">
+      <STitle>Why Hire Us?</STitle>
+      <SDes className="text-center">
+        Choose us because of our reputation for excellence. For more than 10
+        years, we’ve earned a name for quality and customer service. The
+        homeowners we serve rely on us for detail-oriented, consistent cleaning
+        services, every single time we clean their homes.
+      </SDes>
       <SLayout>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16 py-10">
           <div className="text-center">
-            <div className="flex justify-center items-center shadow rounded-full w-28 h-28 mx-auto bg-gray-100">
-              <BiLike className="w-24 h-24 p-5 text-green-500" />
+            <div className="flex justify-center items-center rounded-full w-20 lg:w-28 h-20 lg:h-28 mx-auto bg-gray-100 shadow lg:shadow-lg">
+              <BiLike className="w-16 lg:w-20 h-16 lg:h-20 p-5 text-green-500" />
             </div>
-            <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
-              With Us, Your Satisfaction IsGuaranteed
+            <h1 className="text-xl lg:text-2xl font-medium py-5 text-gray-600">
+              With Us, Your Satisfaction Is Guaranteed
             </h1>
             <p className="text-sm lg:text-base">
               The experts at The Cleaning Company are committed to providing
@@ -31,10 +33,10 @@ const HireUs = () => {
             </p>
           </div>
           <div className="text-center">
-            <div className="flex justify-center items-center shadow rounded-full w-28 h-28 mx-auto bg-gray-100">
-              <BiUser className="w-24 h-24 p-5 text-green-500" />
+            <div className="flex justify-center items-center rounded-full w-20 lg:w-28 h-20 lg:h-28 mx-auto bg-gray-100 shadow lg:shadow-lg">
+              <BiUser className="w-16 lg:w-20 h-16 lg:h-20 p-5 text-green-500" />
             </div>
-            <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
+            <h1 className="text-xl lg:text-2xl font-medium py-5 text-gray-600">
               Our Bonded & InsuredCleaning Team
             </h1>
             <p className="text-sm lg:text-base">
@@ -45,10 +47,10 @@ const HireUs = () => {
             </p>
           </div>
           <div className="text-center">
-            <div className="flex justify-center items-center shadow rounded-full w-28 h-28 mx-auto bg-gray-100">
-              <HiOutlineUserGroup className="w-24 h-24 p-5 text-green-500" />
+            <div className="flex justify-center items-center rounded-full w-20 lg:w-28 h-20 lg:h-28 mx-auto bg-gray-100 shadow lg:shadow-lg">
+              <HiOutlineUserGroup className="w-16 lg:w-20 h-16 lg:h-20 p-5 text-green-500" />
             </div>
-            <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
+            <h1 className="text-xl lg:text-2xl font-medium py-5 text-gray-600">
               Our Teams Consist of Fully Trained Employees
             </h1>
             <p className="text-sm lg:text-base">
@@ -59,10 +61,10 @@ const HireUs = () => {
             </p>
           </div>
           <div className="text-center">
-            <div className="flex justify-center items-center shadow rounded-full w-28 h-28 mx-auto bg-gray-100">
-              <TbMap2 className="w-24 h-24 p-5 text-green-500" />
+            <div className="flex justify-center items-center rounded-full w-20 lg:w-28 h-20 lg:h-28 mx-auto bg-gray-100 shadow lg:shadow-lg">
+              <TbMap2 className="w-16 lg:w-20 h-16 lg:h-20 p-5 text-green-500" />
             </div>
-            <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
+            <h1 className="text-xl lg:text-2xl font-medium py-5 text-gray-600">
               Locally Owned HomeCleaning Services
             </h1>
             <p className="text-sm lg:text-base">
@@ -73,10 +75,10 @@ const HireUs = () => {
             </p>
           </div>
           <div className="text-center">
-            <div className="flex justify-center items-center shadow rounded-full w-28 h-28 mx-auto bg-gray-100">
-              <BiCertification className="w-24 h-24 p-5 text-green-500" />
+            <div className="flex justify-center items-center rounded-full w-20 lg:w-28 h-20 lg:h-28 mx-auto bg-gray-100 shadow lg:shadow-lg">
+              <BiCertification className="w-16 lg:w-20 h-16 lg:h-20 p-5 text-green-500" />
             </div>
-            <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
+            <h1 className="text-xl lg:text-2xl font-medium py-5 text-gray-600">
               Free Over the PhoneEstimates
             </h1>
             <p className="text-sm lg:text-base">
@@ -86,10 +88,10 @@ const HireUs = () => {
             </p>
           </div>
           <div className="text-center">
-            <div className="flex justify-center items-center shadow rounded-full w-28 h-28 mx-auto bg-gray-100">
-              <BiLike className="w-24 h-24 p-5 text-green-500" />
+            <div className="flex justify-center items-center rounded-full w-20 lg:w-28 h-20 lg:h-28 mx-auto bg-gray-100 shadow lg:shadow-lg">
+              <BiLike className="w-16 lg:w-20 h-16 lg:h-20 p-5 text-green-500" />
             </div>
-            <h1 className="text-2xl lg:text-3xl py-5 text-gray-600">
+            <h1 className="text-xl lg:text-2xl font-medium py-5 text-gray-600">
               We Guarantee Our Work
             </h1>
             <p className="text-sm lg:text-base">
@@ -101,7 +103,7 @@ const HireUs = () => {
           </div>
         </div>
       </SLayout>
-    </div>
+    </Container>
   );
 };
 
