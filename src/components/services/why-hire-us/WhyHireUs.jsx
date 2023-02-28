@@ -9,7 +9,7 @@ import PCard, {
   Price
 } from '../../products/layout/PCardCicle';
 import { AgriculturalContext } from '../../../context/tabs/AgriculturalContext';
-import BookNow from '../../products/layout/BookNow';
+import BookNow from '../../products/layout/ContactUsLink';
 import PDetails from '../../products/layout/PDetails';
 import { RoundedButton, STitle } from '../../section-layout/SectionLayout';
 import img1 from '../../..//assets/images/services/residential.jpg';

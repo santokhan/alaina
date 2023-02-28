@@ -4,7 +4,7 @@ import PHeader, { PTitle } from '../layout/PHeader';
 import PMain from '../layout/PMain';
 import PCard, { CImg, CTitle, CDes, Price } from '../layout/PCard';
 import { AgriculturalContext } from '../../../context/tabs/AgriculturalContext';
-import BookNow from '../layout/BookNow';
+import BookNow from '../layout/ContactUsLink';
 import PDetails from '../layout/PDetails';
 
 export default function MassageRatesIndivudual({

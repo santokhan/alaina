@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
-export default function BookNow({ to = '/', className = '' }) {
+export default function ContactUsLink({ to = '/', className = '' }) {
   return (
-    <div className={'px-5 pb-5 flex justify-start ' + className}>
+    <div className={'pb-5 flex justify-start ' + className}>
       <Link
         to={to}
         type="button"
@@ -56,7 +56,7 @@ export default function BookNow({ to = '/', className = '' }) {
             strokeLinejoin="round"
           />
         </svg>
-        <span className="">Book Now</span>
+        <span className="">Contact Us</span>
       </Link>
     </div>
   );

@@ -1,6 +1,6 @@
-import BookNow from "../products/layout/BookNow";
+import ContactUsLink from '../products/layout/ContactUsLink';
 
-export default function ProductViewer({ className = "", children }) {
+export default function ServiceViewer({ className = '', children }) {
   return (
     <div className={className}>
       <section className="pt-40 px-4">
@@ -34,8 +34,8 @@ export function Desc({ children, className }) {
   );
 }
 export function Image({
-  src = "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
-  className,
+  src = 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png',
+  className
 }) {
   return (
     <div className="lg:mt-0 col-12 lg:col-span-5 lg:flex px-5 lg:pl-8 order-1 lg:order-2 max-h-[384px] max-w-[420px]">
@@ -47,13 +47,10 @@ export function Image({
     </div>
   );
 }
-export function Price({ price, time, children, className }) {
+export function ContactBtn({ price, time, children, className }) {
   return (
-    <div className={"flex justify-start gap-8 " + className}>
-      <div className="text-green-800 text-3xl font-semibold">
-        €{price}/<span className="text-base">{time} minuten</span>
-      </div>
-      <BookNow className="px-0" to="/appointments"></BookNow>
+    <div className={'flex justify-start ' + className}>
+      <ContactUsLink className="px-0" to="/contact" />
       {children}
     </div>
   );

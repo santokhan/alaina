@@ -4,7 +4,7 @@ import PHeader, { PTitle } from '../../products/layout/PHeader';
 import PMain from '../../products/layout/PMain';
 import PCard, { CImg, CTitle, CDes, Price } from '../../products/layout/PCard';
 import { AgriculturalContext } from '../../../context/tabs/AgriculturalContext';
-import BookNow from '../../products/layout/BookNow';
+import BookNow from '../layout/ContactUsLink';
 import PDetails from '../../products/layout/PDetails';
 import { SDes, STitle } from '../../section-layout/SectionLayout';
 
