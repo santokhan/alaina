@@ -2,7 +2,7 @@ import React from 'react';
 
 const SectionHeader = ({ title, description }) => {
   return (
-    <div className="text-center w-3/4 mx-auto my-10 lg:mt-20">
+    <div className="max-w-screen-xl text-center mx-auto my-10 lg:mt-20">
       <h1 className="text-2xl lg:text-5xl font-medium capitalize text-gray-600">
         {title}
       </h1>

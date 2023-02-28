@@ -11,12 +11,14 @@ import { Button } from '@mui/material';
 const OurCompany = () => {
   return (
     <div>
-      <SectionHeader
-        title={'About Our Company'}
-        description={
-          'Cleaning can be a chore and we know you have many choices when you consider hiring a comprehensive, high quality, reliable cleaning service.'
-        }
-      />
+      <div className="px-5 lg:px-36">
+        <SectionHeader
+          title={'About Our Company'}
+          description={
+            'Cleaning can be a chore and we know you have many choices when you consider hiring a comprehensive, high quality, reliable cleaning service.'
+          }
+        />
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="bg-cover bg-[url('https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo1/wp-content/uploads/sites/7/2021/08/about-page-img-1.jpg')]"></div>
         <div className="py-8 lg:py-20 px-8 bg-gray-100">
