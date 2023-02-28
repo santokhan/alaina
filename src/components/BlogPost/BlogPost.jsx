@@ -66,7 +66,7 @@ const BlogPost = () => {
           <div className="col-span-5">
             <div>
               <img
-                className="w-full rounded- overflow-hidden"
+                className="w-full rounded-xl overflow-hidden"
                 src="https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo1/wp-content/uploads/sites/7/2017/06/blog-post-img-1.jpg"
                 alt="blog-post"
               />
@@ -107,7 +107,7 @@ const BlogPost = () => {
             <div className="my-10 lg:my-20"></div>
             <div>
               <img
-                className="w-full rounded- overflow-hidden"
+                className="w-full rounded-xl overflow-hidden"
                 src="https://smartdata.tonytemplates.com/cleaning-service-v3/ele-demo1/wp-content/uploads/sites/7/2017/06/blog-post-img-2-2.jpg"
                 alt="blog-post"
               />
@@ -170,6 +170,7 @@ const BlogPost = () => {
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
+                    className="rounded-xl"
                   ></iframe>
                   <div className="flex items-center my-5">
                     <div>
