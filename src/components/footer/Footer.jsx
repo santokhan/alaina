@@ -48,11 +48,11 @@ export default function Footer() {
           <NL>
             <li className="py-2 flex justify-start items-start gap-2">
               <Link
-                to="tel:+251116686900"
+                to="tel:2392597787"
                 className="flex gap-2 items-center text-gray-600 hover:text-green-600 font-medium hover:translate-x-2 transition-all ease-in"
               >
                 <Call />
-                +31642744368
+                239-259-7787
               </Link>
             </li>
             <li className="py-2 flex justify-start items-start gap-2">
@@ -61,8 +61,16 @@ export default function Footer() {
                 className="flex gap-2 items-center text-gray-600 hover:text-green-600 font-medium hover:translate-x-2 transition-all ease-in"
               >
                 <Envelope />
-                biz@ahmassage.nl
+                info@alenascleaning.com
               </Link>
+            </li>
+            <li className="py-2 flex justify-start items-start gap-2">
+              <Map />
+              <div>
+                7191 Cypress <br />
+                Lake Drive STE 3 <br />
+                Fort Myers, FL 33907
+              </div>
             </li>
           </NL>
         </div>

@@ -22,7 +22,7 @@ import { STitle } from '../section-layout/SectionLayout';
 
 export default function SwiperSlider({ startScroll }) {
   return (
-    <div className="bubbles py-12 xl:py-20 bg-white">
+    <div className="bubbles py-12 xl:py-20 bg-white w-full overflow-auto">
       <STitle>Cleaning Services That Shine</STitle>
       {/* Mobile size slider */}
       <div className="block xl:hidden">
@@ -126,7 +126,7 @@ export default function SwiperSlider({ startScroll }) {
             <img src={image5} alt="circle" className="h-full object-contain" />
           </div>
 
-          <div className="relative services-circle-item pos-6 hidden 2xl:block">
+          <div className="relative services-circle-item pos-6 hidden">
             <img src={image6} alt="circle" className="h-full object-contain" />
           </div>
         </div>
