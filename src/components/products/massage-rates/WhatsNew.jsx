@@ -54,7 +54,7 @@ export default function WhatsNew({ myRef }) {
           </PHeader>
           <PMain>
             {data.map((e, i) => (
-              <PCard category={4} id="sports">
+              <PCard category={4} id="sports" key={i}>
                 <PDetails to="/services/vacational">
                   <CImg src={e.src} />
                   <CTitle>{e.title}</CTitle>

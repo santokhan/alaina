@@ -23,7 +23,7 @@ import { STitle } from '../section-layout/SectionLayout';
 export default function SwiperSlider({ startScroll }) {
   return (
     <div className="bubbles py-12 xl:py-20 bg-white w-full overflow-auto">
-      <STitle>Cleaning Services That Shine</STitle>
+      <STitle className="px-4">Cleaning Services That Shine</STitle>
       {/* Mobile size slider */}
       <div className="block xl:hidden">
         <Swiper

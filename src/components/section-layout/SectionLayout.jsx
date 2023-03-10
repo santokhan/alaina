@@ -67,7 +67,6 @@ export const RoundedButton = ({ children }) => (
       boxShadow: 'none',
       ':hover': {
         backgroundColor: 'rgb(22,163,74)',
-        color: 'white',
         boxShadow: 'none',
         color: 'white'
       },
